@@ -1,0 +1,353 @@
+#
+# $Id: demo.map,v 1.1 2005-12-29 19:06:35 tkralidi Exp $
+#
+# Start of map file
+#
+
+MAP
+
+ # all temp files get prefixed with this string
+ NAME ms_ogc_workshop
+
+ # always returns a map
+ STATUS ON
+
+ # image format options
+ OUTPUTFORMAT
+  NAME png
+  DRIVER "GD/PNG"
+  MIMETYPE "image/png"
+  IMAGEMODE RGB
+  EXTENSION "png"
+ END
+
+ # width / height of map image
+ SIZE 500 300
+
+ # projection of the INTERFACE that this mapfile supports
+ PROJECTION
+  "init=epsg:4326"
+ END
+
+ # minx miny maxx maxy
+ EXTENT -180 -90 180 90 # World
+
+ # units of map/app
+ UNITS DD
+
+ # def pointers for symbols
+
+ SYMBOLSET "../etc/symbols/symbols.sym"
+ FONTSET   "../etc/fonts/fonts.txt"
+
+ #
+ # Start of web interface definition
+ #
+ WEB
+
+  TEMPLATE demo.html
+
+  # this is set in the form which initializes the page, but can be set here if you want
+  IMAGEPATH "/ms4w/tmp/ms_tmp/"
+
+  # this is set in the form which initializes the page, but can be set here if you want
+  IMAGEURL "/ms_tmp/"
+
+  METADATA
+   # generic OWS specific info
+   # sets base URL for OGC Schemas so the root element in the
+   # Capabilities document points to the correct schema location
+   # to produce valid XML
+   "ows_schemas_location" "http://schemas.opengeospatial.net"
+
+   # OGC:WMS specific tags
+
+   # sets:
+   # /ViewContext/General/Title
+   "wms_title" "Sample WMS for MapServer OGC Web Services Workshop"
+
+   # sets:
+   # /ViewContext/General/Abstract
+   "wms_abstract" "Sample WMS for MapServer OGC Web Services Workshop.  Enjoy!"
+
+   # sets:
+   # /ViewContext/General/KeywordList/Keyword[]
+   "wms_keywordlist" "mapserver,ogc,workshop"
+
+   # sets:
+   # /ViewContext/General/ContactInformation/ContactPersonPrimary/ContactPerson
+   "wms_contactperson" "Tom Kralidis"
+
+   # sets:
+   # /ViewContext/General/ContactInformation/ContactPersonPrimary/ContactOrganization
+   "wms_contactorganization" "Environment Canada"
+
+   # sets:
+   # /ViewContext/General/ContactInformation/ContactPosition
+   "wms_contactposition" "Senior Systems Scientist"
+
+   # sets:
+   # /ViewContext/General/ContactInformation/ContactAddress/AddressType
+   "wms_addresstype" "postal"
+
+   # sets:
+   # /ViewContext/General/ContactInformation/ContactAddress/Address
+   "wms_address"     "867 Lakeshore Road"
+
+   # sets:
+   # /ViewContext/General/ContactInformation/ContactAddress/City
+   "wms_city" "Burlington"
+
+   # sets:
+   # /ViewContext/General/ContactInformation/ContactAddress/StateOrProvince
+   "wms_stateorprovince" "Ontario"
+
+   # sets:
+   # /ViewContext/General/ContactInformation/ContactAddress/PostCode
+   "wms_postcode" "L7R-4A6"
+
+   # sets:
+   # /ViewContext/General/ContactInformation/ContactAddress/Country
+   "wms_country" "Canada"
+
+   # sets:
+   # /ViewContext/General/ContactInformation/ContactVoiceTelephone
+   "wms_contactvoicetelephone" "+01-905-336-4409"
+
+   # sets:
+   # /ViewContext/General/ContactInformation/ContactFacsimileTelephone
+   "wms_contactfacsimiletelephone" "+01-905-336-4499"
+
+   # sets:
+   # /ViewContext/General/ContactInformation/ContactElectronicMailAddress
+   "wms_contactelectronicmailaddress" "tom.kralidis@ec.gc.ca"
+
+   # if this value is set to 1, you can convert a mapfile to
+   # an OGC:WMC via URL, with:
+   # http://localhost/cgi-bin/mapserv.exe?map=/ms4w/apps/ms_ogc_workshop/context/demo.map&request=GetContext
+   # Remember, an OGC:WMC (just like any other XML) does NOT
+   # have to be a static document
+   "wms_getcontext_enabled" "1"
+
+   # sets:
+   # /ViewContext/@id
+   "wms_context_fid" "ms_ogc_workshop"
+
+   # sets:
+   # /ViewContext/@version
+   "wms_context_version" "1.0.0"
+
+   # sets:
+   # /ViewContext/General/DescriptionURL/@format
+   "wms_descriptionurl_format" "text/html"
+
+   # sets:
+   # /ViewContext/General/DescriptionURL/OnlineResource/@xlink:href
+   "wms_descriptionurl_href" "http://www.omsug.ca/osgis2004/"
+
+   # sets:
+   # /ViewContext/General/LogoURL/@width
+   "wms_logourl_width" "655"
+
+   # sets:
+   # /ViewContext/General/LogoURL/@height
+   "wms_logourl_height" "130"
+
+   # sets:
+   # /ViewContext/General/LogoURL/@format
+   "wms_logourl_format" "image/jpeg"
+
+   # sets:
+   # /ViewContext/General/LogoURL/OnlineResource/@xlink:href
+   "wms_logourl_href" "http://www.omsug.ca/osgis2004/images/top_banner_2.jpg"
+  END
+ END
+
+ #
+ # Start of reference map
+ #
+ REFERENCE
+  # which image is the base image for refmaps
+  # a area of interest box will be drawn on top of it
+  IMAGE ../../graphics/refmap_world_4326.gif
+
+  # extents of ref image (minx miny maxx maxy)
+  EXTENT -180 -90 180 90
+
+  # width / height of image
+  SIZE 150 75
+
+  # always generated
+  STATUS ON
+
+  COLOR -1 -1 -1
+
+  # color of outline
+  OUTLINECOLOR 255 0 0
+ END
+
+ #
+ # Start of legend
+ #
+ LEGEND
+  KEYSIZE 18 12
+  LABEL
+   TYPE BITMAP
+   SIZE MEDIUM
+   COLOR 0 0 89
+  END
+  STATUS ON
+ END
+
+ #
+ # Start of scalebar
+ #
+ SCALEBAR
+  IMAGECOLOR 255 0 0
+  LABEL
+   COLOR 0 0 0
+   SIZE tiny    
+  END
+  STYLE 1
+  SIZE 80 2
+  COLOR 0 0 0
+  UNITS KILOMETERS
+  INTERVALS 1
+  TRANSPARENT TRUE
+  STATUS TRUE
+ END
+
+ # start of querymap object
+ QUERYMAP
+  SIZE 200 200
+  STATUS ON
+  STYLE HILITE
+  COLOR 255 0 0
+ END
+
+ # start of layer definitions
+
+ LAYER
+  # name of layer
+  NAME land_shallow_topo_2048
+
+  # projection: if the data is NOT in the same projection as the global
+  # mapfile, you must explicitly give the native projection code of the data
+  # some common projections:
+  # lat/long: epsg:4326
+  # NRCan LCC: epsg:42304
+  PROJECTION
+   "init=epsg:4236"
+  END
+
+  # what type of data is this?
+  TYPE RASTER
+
+  # always returned with interface
+  STATUS ON
+
+  # actual data pointer
+  DATA ../../data/land_shallow_topo_2048.tif
+ END
+ LAYER
+  # name of layer
+  NAME rivers
+
+  # projection: if the data is NOT in the same projection as the global
+  # mapfile, you must explicitly give the native projection code of the data
+  # some common projections:
+  # lat/long: epsg:4326
+  # NRCan LCC: epsg:42304
+  PROJECTION
+   "init=epsg:4236"
+  END
+
+  # what type of data is this?
+  TYPE LINE
+
+  # always returned with interface
+  STATUS ON
+
+  # actual data pointer
+  DATA ../../data/rivers
+
+  # data is queryable
+  DUMP TRUE
+
+  # query templates for HTML-based queries
+  HEADER   ../../templates/rivers_query_header.html
+  TEMPLATE ../../templates/rivers_query_body.html
+  FOOTER   ../../templates/rivers_query_footer.html
+
+  TOLERANCE 5
+
+  # how will this data look?
+  # multiple styles
+  # Mapscript API or OGC:WMS GetStyles request will convert
+  # class definitions to OGC:SLD
+
+  # classify by river systems
+  CLASSITEM 'SYSTEM'
+
+  CLASS
+   NAME "Amazon"
+   EXPRESSION /Amazon/
+   COLOR 0 0 255
+  END
+
+  CLASS
+   NAME "Congo"
+   EXPRESSION /Congo/
+   COLOR 0 0 240
+  END
+
+  CLASS
+   NAME "Lena"
+   EXPRESSION /Lena/
+   COLOR 0 0 225
+  END
+
+  CLASS
+   NAME "Mackenzie"
+   EXPRESSION /Mackenzie/
+   COLOR 0 0 210
+  END
+
+  CLASS
+   NAME "Mississippi"
+   EXPRESSION /Mississippi/
+   COLOR 0 0 195
+  END
+
+  CLASS
+   NAME "Nile"
+   EXPRESSION /Nile/
+   COLOR 0 0 180
+  END
+
+  CLASS
+   NAME "Ob"
+   EXPRESSION /Ob/
+   COLOR 0 0 165
+  END
+
+  CLASS
+   NAME "Parana"
+   EXPRESSION /Parana/
+   COLOR 0 0 150
+  END
+
+  CLASS
+   NAME "Tigris/Euphrates"
+   EXPRESSION /Tigris/
+   COLOR 0 0 135
+  END
+
+  CLASS
+   NAME "Other"
+   EXPRESSION /./
+   COLOR 0 0 120
+  END
+
+ END
+END

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- $Id: index.html,v 1.1 2005-12-29 19:06:35 tkralidi Exp $ -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<meta http-equiv="Content-Style-Type" content="text/css" />
+		<meta http-equiv="pragma" content="no-cache"/>
+		<meta http-equiv="Expires" content="Thu, 01 Dec 1994 120000 GMT"/>
+		<title>MapServer OGC Web Services Workshop</title>
+		<link rel="stylesheet" media="all" href="./demo.css" type="text/css"/>
+	</head>
+	<body>
+		<h2>MapServer OGC Web Services Workshop</h2>
+		<hr/>
+		<h3>Abstract</h3>
+		<p>Interoperability is increasingly becoming a focus point for organizations that distribute and share data over the Internet. The <a href="http://www.opengeospatial.org/" title="Open Geospatial Consortium">Open Geospatial Consortium (OGC)</a> focuses on the development of publicly available geospatial web standards. <a href="http://mapserver.gis.umn.edu/" title="UMN MapServer">UMN MapServer</a> currently supports numerous OGC specifications, allowing users to publish their data services in an interoperable manner. This workshop will review the OGC specs supported in MapServer as well as provide information on implementation options and issues, as well as what the future holds for OGC support in MapServer</p>
+		<ul>
+			<li><a title="Slides for hands-on session (.ppt)" href="doc/ms_ogc_workshop.ppt">Slides for hands-on session (.ppt)</a></li>
+		</ul>
+		<hr/>
+		<h3>Notes</h3>
+		<ul>
+			<li>You MUST be familiar with basic MapServer concepts to do this workshop.  This workshop assumes you are comfortable with:</li>
+			<ul>
+				<li>Writing and working with mapfiles</li>
+				<li>Connecting various data types</li>
+				<li>Working with templates, fonts, symbols, legends, scalebars, etc.</li>
+			</ul>
+			<li>You need to be connected to the Internet for examples and exercises which connect to external Web Services and the "Links of Interest" section of this page.</li>
+		</ul>
+		<hr/>
+
+		<h3>Hands-on Session</h3>
+
+		<h4>1./ Basic MapServer</h4>
+
+		<ul>
+			<li><a title="Basic MapServer interface" href="client/default/demo_init.html">Basic MapServer interface</a> -- mapfile <a title="mapfile here" href="client/default/demo.map">here</a></li>
+		</ul>
+
+		<h4>2./ Projection Setup</h4>
+
+		<ul>
+			<li><a title="More EPSG codes (add to /ms4w/proj/epsg)" href="etc/custom_proj_epsgs.txt">More EPSG codes (add to /ms4w/proj/epsg)</a></li>
+		</ul>
+
+		<h4>3./ Setting up OGC parameters in mapfile</h4>
+
+		<ul>
+			<li><a title="Mapping of mapfile to OGC services" href="service/index.html">Mapping of mapfile to OGC services</a></li>
+			<li><a title="Hiding your mapfile parameter through HTTP server settings" href="/cgi-bin/ms_ogc_workshop?version=1.1.1&amp;service=WMS&amp;request=GetCapabilities">Hiding your mapfile parameter through HTTP server settings</a> -- server config example <a title="server config example here" href="service/hide-mapfile-location.php">here</a> -- mapfile <a title="mapfile here" href="service/config.map">here</a></li>
+			<li><a title="OWS metadata generator tool" href="etc/ows_mapfile.html">OWS metadata generator tool</a></li>
+		</ul>
+
+		<h4>4./ Publishing OGC:WMS</h4>
+
+		<ul>
+			<li><a title="Publishing as OGC:WMS (GetCapabilities)" href="/cgi-bin/mapserv.exe?map=/ms4w/apps/ms_ogc_workshop/service/config.map&amp;version=1.1.1&amp;service=WMS&amp;request=GetCapabilities">Publishing as OGC:WMS (GetCapabilities)</a> -- mapfile <a title="mapfile here" href="service/config.map">here</a></li>
+			<li><a title="Publishing as OGC:WMS (DescribeLayer)" href="/cgi-bin/mapserv.exe?map=/ms4w/apps/ms_ogc_workshop/service/config.map&amp;version=1.1.1&amp;service=WMS&amp;request=DescribeLayer&amp;layers=rivers">Publishing as OGC:WMS (DescribeLayer)</a> -- mapfile <a title="mapfile here" href="service/config.map">here</a></li>
+			<li><a title="Publishing as OGC:WMS (GetMap)" href="/cgi-bin/mapserv.exe?map=/ms4w/apps/ms_ogc_workshop/service/config.map&amp;version=1.1.1&amp;service=WMS&amp;request=GetMap&amp;srs=EPSG:4326&amp;bbox=-180,-90,180,90&amp;format=image/png&amp;layers=land_shallow_topo_2048,rivers&amp;styles=,&amp;transparent=true&amp;width=500&amp;height=300">Publishing as OGC:WMS (GetMap)</a> -- mapfile <a title="mapfile here" href="service/config.map">here</a></li>
+			<li><a title="Publishing as OGC:WMS (GetFeatureInfo) on vector data -- HTML response" href="/cgi-bin/mapserv.exe?map=/ms4w/apps/ms_ogc_workshop/service/config.map&amp;version=1.1.1&amp;service=WMS&amp;request=GetFeatureInfo&amp;srs=EPSG:4326&amp;bbox=-180,-90,180,90&amp;format=image/png&amp;layers=land_shallow_topo_2048,rivers&amp;styles=,&amp;transparent=true&amp;width=500&amp;height=300&amp;query_layers=rivers&amp;info_format=text/html&amp;x=141&amp;y=91&amp;radius=10">Publishing as OGC:WMS (GetFeatureInfo) on vector data</a> -- HTML response -- mapfile <a title="mapfile here" href="service/config.map">here</a> -- query templates <a title="query template global header" href="templates/query_header.html">global header</a> | <a title="query template data header" href="templates/rivers_query_header.html">data header</a> | <a title="query template data body" href="templates/rivers_query_body.html">data body</a> | <a title="query template global footer" href="templates/query_footer.html">global footer</a></li>
+			<li><a title="Publishing as OGC:WMS (GetFeatureInfo) on vector data -- OGC:GML response" href="/cgi-bin/mapserv.exe?map=/ms4w/apps/ms_ogc_workshop/service/config.map&amp;version=1.1.1&amp;service=WMS&amp;request=GetFeatureInfo&amp;srs=EPSG:4326&amp;bbox=-180,-90,180,90&amp;format=image/png&amp;layers=land_shallow_topo_2048,rivers&amp;styles=,&amp;transparent=true&amp;width=500&amp;height=300&amp;query_layers=rivers&amp;info_format=application/vnd.ogc.gml&amp;x=141&amp;y=91&amp;radius=10">Publishing as OGC:WMS (GetFeatureInfo) on vector data</a> -- OGC:GML response -- mapfile <a title="mapfile here" href="service/config.map">here</a></li>
+			<li><a title="Publishing as OGC:WMS (GetFeatureInfo) on raster data -- HTML response" href="/cgi-bin/mapserv.exe?map=/ms4w/apps/ms_ogc_workshop/service/config.map&amp;version=1.1.1&amp;service=WMS&amp;request=GetFeatureInfo&amp;srs=EPSG:4326&amp;bbox=-180,-90,180,90&amp;format=image/png&amp;layers=land_shallow_topo_2048,rivers&amp;styles=,&amp;transparent=true&amp;width=500&amp;height=300&amp;query_layers=land_shallow_topo_2048&amp;info_format=text/html&amp;x=141&amp;y=91&amp;radius=10">Publishing as OGC:WMS (GetFeatureInfo) on raster data</a>-- HTML response -- mapfile <a title="mapfile here" href="service/config.map">here</a> -- query templates <a title="query template global header" href="templates/query_header.html">global header</a> | <a title="query template header" href="templates/land_shallow_topo_2048_query_header.html">data header</a> | <a title="query template body" href="templates/land_shallow_topo_2048_query_body.html">data body</a> | <a title="query template global footer" href="templates/query_footer.html">global footer</a></li>
+			<li><a title="Publishing as OGC:WMS (GetFeatureInfo) on raster data -- OGC:GML response" href="/cgi-bin/mapserv.exe?map=/ms4w/apps/ms_ogc_workshop/service/config.map&amp;version=1.1.1&amp;service=WMS&amp;request=GetFeatureInfo&amp;srs=EPSG:4326&amp;bbox=-180,-90,180,90&amp;format=image/png&amp;layers=land_shallow_topo_2048,rivers&amp;styles=,&amp;transparent=true&amp;width=500&amp;height=300&amp;query_layers=land_shallow_topo_2048&amp;info_format=application/vnd.ogc.gml&amp;x=141&amp;y=91&amp;radius=10">Publishing as OGC:WMS (GetFeatureInfo) on raster data</a> -- OGC:GML response -- mapfile <a title="mapfile here" href="service/config.map">here</a></li>
+
+		</ul>
+
+		<h4>5./ Publishing OGC:WMS with OGC:SLD</h4>
+
+		<ul>
+			<li><a title="Publishing as OGC:WMS (GetMap) with remote styling (OGC:SLD)" href="/cgi-bin/mapserv.exe?map=/ms4w/apps/ms_ogc_workshop/service/config.map&amp;version=1.1.1&amp;service=WMS&amp;request=GetMap&amp;srs=EPSG:4326&amp;bbox=-180,-90,180,90&amp;format=image/png&amp;layers=land_shallow_topo_2048,rivers&amp;styles=,&amp;transparent=true&amp;width=500&amp;height=300&amp;sld=http://127.0.0.1/ms_ogc_workshop/sld/rivers.sld">Publishing as OGC:WMS (GetMap) with remote styling (OGC:SLD)</a> -- SLD document <a title="SLD document here" href="sld/rivers.sld">here</a> -- mapfile <a title="mapfile here" href="service/config.map">here</a></li>
+			<li><a title="Publishing as OGC:WMS (GetMap) with remote styling (OGC:SLD) and filtering (OGC:Filter)" href="/cgi-bin/mapserv.exe?map=/ms4w/apps/ms_ogc_workshop/service/config.map&amp;version=1.1.1&amp;service=WMS&amp;request=GetMap&amp;srs=EPSG:4326&amp;bbox=-180,-90,180,90&amp;format=image/png&amp;layers=land_shallow_topo_2048,rivers&amp;styles=,&amp;transparent=true&amp;width=500&amp;height=300&amp;sld=http://127.0.0.1/ms_ogc_workshop/sld/rivers-filter.sld">Publishing as OGC:WMS (GetMap) with remote styling (OGC:SLD) and filtering (OGC:Filter)</a> -- SLD document <a title="SLD document here" href="sld/rivers-filter.sld">here</a> -- mapfile <a title="mapfile here" href="service/config.map">here</a></li>
+			<li><a title="Publishing as OGC:WMS (GetMap) with remote styling (OGC:SLD) and filtering (OGC:Filter) to highlight features" href="/cgi-bin/mapserv.exe?map=/ms4w/apps/ms_ogc_workshop/service/config.map&amp;version=1.1.1&amp;service=WMS&amp;request=GetMap&amp;srs=EPSG:4326&amp;bbox=-180,-90,180,90&amp;format=image/png&amp;layers=land_shallow_topo_2048,rivers&amp;styles=,&amp;transparent=true&amp;width=500&amp;height=300&amp;sld=http://127.0.0.1/ms_ogc_workshop/sld/rivers-hilite.sld">Publishing as OGC:WMS (GetMap) with remote styling (OGC:SLD) and filtering (OGC:Filter) to highlight features</a> -- SLD document <a title="SLD document here" href="sld/rivers-hilite.sld">here</a> -- mapfile <a title="mapfile here" href="service/config.map">here</a></li>
+			<li><a title="Publishing as OGC:WMS (GetMap) with remote styling (OGC:SLD) and filtering (OGC:Filter) to classify raster imagery" href="/cgi-bin/mapserv.exe?map=/ms4w/apps/ms_ogc_workshop/service/config.map&amp;version=1.1.1&amp;service=WMS&amp;request=GetMap&amp;srs=EPSG:4326&amp;bbox=-180,-90,180,90&amp;format=image/png&amp;layers=land_shallow_topo_2048,rivers&amp;styles=,&amp;transparent=true&amp;width=500&amp;height=300&amp;sld=http://127.0.0.1/ms_ogc_workshop/sld/land_shallow_topo_2048.sld">Publishing as OGC:WMS (GetMap) with remote styling (OGC:SLD) to classify imagery</a> -- SLD document <a title="SLD document here" href="sld/land_shallow_topo_2048.sld">here</a> -- mapfile <a title="mapfile here" href="service/config.map">here</a></li>
+			<li><a title="Publishing as OGC:WMS (GetLegendGraphic)" href="/cgi-bin/mapserv.exe?map=/ms4w/apps/ms_ogc_workshop/service/config.map&amp;version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=rivers&amp;format=image/png">Publishing as OGC:WMS (GetLegendGraphic)</a> -- mapfile <a title="mapfile here" href="service/config.map">here</a></li>
+			<li><a title="Publishing as OGC:SLD with OGC:WMS (GetStyles) to convert MapServer classes to SLD documents" href="/cgi-bin/mapserv.exe?map=/ms4w/apps/ms_ogc_workshop/sld/demo.map&amp;version=1.1.1&amp;service=WMS&amp;request=GetStyles&amp;layers=rivers">Publishing as OGC:SLD with OGC:WMS (GetStyles) to convert MapServer classes to SLD documents</a> -- mapfile <a title="mapfile here" href="service/config.map">here</a></li>
+		</ul>
+
+		<h4>6./ Using OGC:SLD via MapScript</h4>
+
+		<ul>
+			<li><a title="Publishing as OGC:SLD with Mapscript to convert MapServer classes to SLD documents" href="sld/OGC_SLD_mapfileclasses2sld.php">Publishing as OGC:SLD with Mapscript to convert MapServer classes to SLD documents</a> -- mapfile <a title="mapfile here" href="service/config.map">here</a></li>
+		</ul>
+
+		<h4>7./ Publishing OGC:WFS</h4>
+
+		<ul>
+			<li><a title="Publishing as OGC:WFS (GetCapabilities)" href="/cgi-bin/mapserv.exe?map=/ms4w/apps/ms_ogc_workshop/service/config.map&amp;version=1.0.0&amp;service=WFS&amp;request=GetCapabilities">Publishing as OGC:WFS (GetCapabilities)</a> -- mapfile <a title="mapfile here" href="service/config.map">here</a></li>
+			<li>Publishing as OGC:WFS (DescribeFeatureType) -- mapfile <a title="mapfile here" href="service/config.map">here</a></li>
+			<ul>
+				<li><a title="GML2 Application Schema" href="/cgi-bin/mapserv.exe?map=/ms4w/apps/ms_ogc_workshop/service/config.map&amp;version=1.0.0&amp;service=WFS&amp;request=DescribeFeatureType&amp;typename=rivers&amp;outputFormat=XMLSCHEMA">GML2 Application Schema</a></li>
+				<li><a title="GML3 Level 0 Application Schema" href="/cgi-bin/mapserv.exe?map=/ms4w/apps/ms_ogc_workshop/service/config.map&amp;version=1.0.0&amp;service=WFS&amp;request=DescribeFeatureType&amp;typename=rivers&amp;outputFormat=SFE_XMLSCHEMA">GML3 Level 0 Application Schema</a></li>
+			</ul>
+			<li>Publishing as OGC:WFS (GetFeature) with custom query (OGC:Filter) -- Filter Encoding Examples <a title="Filter Encoding Examples here" href="filter/index.html">here</a> -- mapfile <a title="mapfile here" href="service/config.map">here</a></li>
+			<ul>
+				<li><a title="GML2" href="/cgi-bin/mapserv.exe?map=/ms4w/apps/ms_ogc_workshop/service/config.map&amp;version=1.0.0&amp;service=WFS&amp;request=GetFeature&amp;typename=rivers&amp;filter=&lt;Filter&gt;&lt;PropertyIsEqualTo&gt;&lt;PropertyName&gt;NAME&lt;/PropertyName&gt;&lt;Literal&gt;Great Bear&lt;/Literal&gt;&lt;/PropertyIsEqualTo&gt;&lt;/Filter&gt;&amp;outputFormat=GML2">GML2</a></li>
+				<li><a title="GML3 Level 0" href="/cgi-bin/mapserv.exe?map=/ms4w/apps/ms_ogc_workshop/service/config.map&amp;version=1.0.0&amp;service=WFS&amp;request=GetFeature&amp;typename=rivers&amp;filter=&lt;Filter&gt;&lt;PropertyIsEqualTo&gt;&lt;PropertyName&gt;NAME&lt;/PropertyName&gt;&lt;Literal&gt;Great Bear&lt;/Literal&gt;&lt;/PropertyIsEqualTo&gt;&lt;/Filter&gt;&amp;outputFormat=GML3">GML3 Level 0</a></li>
+			</ul>
+		</ul>
+
+		<h4>8./ Publishing OGC:WCS</h4>
+
+		<ul>
+			<li><a title="Publishing as OGC:WCS (GetCapabilities)" href="/cgi-bin/mapserv.exe?map=/ms4w/apps/ms_ogc_workshop/service/config.map&amp;version=1.0.0&amp;service=WCS&amp;request=GetCapabilities">Publishing as OGC:WCS (GetCapabilities)</a> -- mapfile <a title="mapfile here" href="service/config.map">here</a></li>
+			<li><a title="Publishing as OGC:WCS (DescribeCoverage)" href="/cgi-bin/mapserv.exe?map=/ms4w/apps/ms_ogc_workshop/service/config.map&amp;version=1.0.0&amp;service=WCS&amp;request=DescribeCoverage">Publishing as OGC:WCS (DescribeCoverage)</a> -- mapfile <a title="mapfile here" href="service/config.map">here</a></li>
+			<li><a title="Publishing as OGC:WCS (GetCoverage)" href="/cgi-bin/mapserv.exe?map=/ms4w/apps/ms_ogc_workshop/service/config.map&amp;version=1.0.0&amp;service=WCS&amp;request=GetCoverage&amp;coverage=toronto&amp;crs=EPSG:26917&amp;resx=500&amp;resy=500&amp;format=GEOTIFF_RGB">Publishing as OGC:WCS (GetCoverage)</a> -- mapfile <a title="mapfile here" href="service/config.map">here</a></li>
+		</ul>
+
+		<h4>9./ Consuming OGC:WMS</h4>
+
+		<ul>
+			<li><a title="Consuming OGC:WMS" href="client/wms/demo_init.html">Consuming OGC:WMS</a> -- mapfile <a title="mapfile here" href="client/wms/demo.map">here</a></li>
+		</ul>
+
+		<h4>10./ Consuming OGC:WFS</h4>
+
+		<ul>
+			<li><a title="Consuming OGC:WFS" href="client/wfs/demo_init.html">Consuming OGC:WFS</a> -- mapfile <a title="mapfile here" href="client/wfs/demo.map">here</a></li>
+		</ul>
+
+		<h4>11./ Consuming OGC:GML</h4>
+
+		<ul>
+			<li><a title="Consuming OGC:GML as a static document" href="client/gml/demo_init.html">Consuming OGC:GML as a static document</a> -- mapfile <a title="mapfile here" href="client/gml/demo.map">here</a> -- GML document <a href="data/mums.gml" title="GML document here">here</a> -- GML application schema <a href="data/mums.xsd" title="GML application schema here">here</a> -- GML structure (OGR .gfs file) <a href="data/mums.gfs" title="GML structure (OGR .gfs file) here">here</a></li>
+		</ul>
+
+		<h4>12./ Consuming OGC:WMC</h4>
+
+		<ul>
+			<li><a title="Publishing as OGC:WMC with MapServer CGI" href="/cgi-bin/mapserv.exe?map=/ms4w/apps/ms_ogc_workshop/context/demo.map&amp;request=GetContext">Publishing as OGC:WMC with MapServer CGI</a> -- mapfile <a title="mapfile here" href="context/demo.map">here</a></li>
+			<li><a title="Publishing as OGC:WMC with Mapscript" href="context/OGC_WMC_mapfile2context.php">Publishing as OGC:WMC with Mapscript</a> -- mapfile <a title="mapfile here" href="context/demo.map">here</a></li>
+		</ul>
+
+		<h4>13./ Consuming Remote Web Services</h4>
+
+		<ul>
+			<li><a title="Consuming Gazetteer Web Services with PHP middleware" href="client/webservices/demo_init.html">Consuming Gazetteer Web Services with PHP middleware</a> -- mapfile <a title="mapfile here" href="client/webservices/demo.map">here</a></li>
+		</ul>
+
+		<hr/>
+		<h3>Exercises</h3>
+
+		<h4>1./ Publishing OGC:WMS</h4>
+
+		<ul>
+			<li><a title="Demo" href="/cgi-bin/mapserv.exe?map=/ms4w/apps/ms_ogc_workshop/service/exercise.map&amp;version=1.1.1&amp;service=WMS&amp;request=GetCapabilities">GetCapabilities Test</a> -- mapfile <a title="mapfile here" href="service/exercise.map">here</a></li>
+		</ul>
+
+		<hr/>
+
+		<h4>2./ Consuming OGC:WMS</h4>
+
+		<ul>
+			<li><a title="Demo" href="client/wms/satellite/demo_init.html">Demo</a> -- mapfile <a title="mapfile here" href="client/wms/satellite/demo.map">here</a></li>
+		</ul>
+
+		<h4>3./ Consuming OGC:WFS with Filters</h4>
+
+		<ul>
+			<li><a title="Demo" href="client/wfs-filter/demo_init.html">Demo</a> -- mapfile <a title="mapfile here" href="client/wfs-filter/demo.map">here</a></li>
+		</ul>
+
+		<hr/>
+
+		<h3>Links of Interest</h3>
+		<ul>
+			<li><a title="MapServer Documentation Index" href="http://mapserver.gis.umn.edu/doc/">MapServer Documentation Index</a></li>
+			<li><a title="MapServer Mapfile HOWTO" href="http://mapserver.gis.umn.edu/doc/mapfile-reference.html">MapServer Mapfile HOWTO</a></li>
+			<li><a title="MapServer WMS Client HOWTO" href="http://mapserver.gis.umn.edu/doc/wms-client-howto.html">MapServer WMS Client HOWTO</a></li>
+			<li><a title="MapServer WMS Server HOWTO" href="http://mapserver.gis.umn.edu/doc/wms-server-howto.html">MapServer WMS Server HOWTO</a></li>
+			<li><a title="MapServer WMS Time Support HOWTO" href="http://mapserver.gis.umn.edu/doc/wms-time-support-howto.html">MapServer WMS Time Support HOWTO</a></li>
+			<li><a title="MapServer WFS Client HOWTO" href="http://mapserver.gis.umn.edu/doc/wfs-client-howto.html">MapServer WFS Client HOWTO</a></li>
+			<li><a title="MapServer WFS Server HOWTO" href="http://mapserver.gis.umn.edu/doc/wfs-server-howto.html">MapServer WFS Server HOWTO</a></li>
+			<li><a title="MapServer Filter Encoding HOWTO" href="http://mapserver.gis.umn.edu/doc/filter-encoding-howto.html">MapServer Filter Encoding HOWTO</a></li>
+			<li><a title="MapServer Web Map Context Documents HOWTO" href="http://mapserver.gis.umn.edu/doc/mapcontext-howto.html">MapServer Web Map Context Documents HOWTO</a></li>
+			<li><a title="MapServer SLD HOWTO" href="http://mapserver.gis.umn.edu/doc/sld-howto.html">MapServer SLD HOWTO</a></li>
+			<li><a title="MapServer Filter Wiki Page" href="http://www2.dmsolutions.ca/tmp/mapserver_fe.html">MapServer Filter Wiki Page</a></li>
+			<li><a title="MapServer WCS Wiki Page" href="http://mapserver.gis.umn.edu/cgi-bin/wiki.pl?WCSMapServer">MapServer WCS Wiki Page</a></li>
+			<li><a title="OGR GML Support" href="http://gdal.maptools.org/ogr/drv_gml.html">OGR GML Support</a></li>
+		</ul>
+		<ul>
+			<li><a title="O'Reilly Web Mapping Illustrated" href="http://www.oreilly.com/catalog/webmapping/">O'Reilly Web Mapping Illustrated</a></li>
+			<li><a title="O'Reilly Mapping Hacks" href="http://www.oreilly.com/catalog/mappinghks/">O'Reilly Mapping Hacks</a></li>
+		</ul>
+		<ul>
+			<li><a title="Open Geospatial Consortium (OGC)" href="http://www.opengeospatial.net/">Open Geospatial Consortium (OGC)</a></li>
+			<li><a title="OGC Public Forum" href="http://feature.opengeospatial.org/forumbb/">OGC Public Forum</a></li>
+			<li><a title="OGCNetwork" href="http://www.ogcnetwork.org/">OGCNetwork</a></li>
+			<li><a title="OGC Schemas" href="http://schemas.opengeospatial.net/">OGC Schemas</a></li>
+			<li><a title="OGC:WMS Specification (1.1.1)" href="http://www.opengeospatial.org/docs/01-068r2.pdf">OGC:WMS Specification (1.1.1)</a></li>
+			<li><a title="OGC:SLD Specification (1.0.0)" href="http://www.opengeospatial.org/docs/02-070.pdf">OGC:SLD Specification (1.0.0)</a></li>
+			<li><a title="OGC:WFS Specification (1.0.0)" href="http://www.opengeospatial.org/docs/02-058.pdf">OGC:WFS Specification (1.0.0)</a></li>
+			<li><a title="OGC Filter Encoding Specification (1.0.0)" href="http://www.opengeospatial.org/docs/02-059.pdf">OGC Filter Encoding Specification (1.0.0)</a></li>
+			<li><a title="OGC:GML Specification (2.1.1)" href="http://www.opengeospatial.org/docs/02-009.pdf">OGC:GML Specification (2.1.1)</a></li>
+			<li><a title="OGC:GML Specification (2.1.2)" href="http://www.opengeospatial.org/docs/02-069.pdf">OGC:GML Specification (2.1.2)</a></li>
+			<li><a title="OGC:GML Specification (3.0.0)" href="http://www.opengeospatial.org/docs/02-023r4.pdf">OGC:GML Specification (3.0.0)</a></li>
+			<li><a title="OGC:WMC Specification (1.0.0)" href="http://www.opengeospatial.org/docs/03-036r2.pdf">OGC:WMC Specification (1.0.0)</a></li>
+			<li><a title="OGC:WCS Specification (1.0.0)" href="http://www.opengeospatial.org/docs/03-065r6.pdf">OGC:WCS Specification (1.0.0)</a></li>
+			<li><a title="European Petroleum Survey Group (EPSG)" href="http://www.epsg.org/">European Petroleum Survey Group (EPSG)</a></li>
+		</ul>
+		<ul>
+			<li><a title="World Wide Web Consortium (W3C)" href="http://www.w3.org/">World Wide Web Consortium (W3C)</a></li>
+			<li><a title="Hypertext Markup Language (HTML)" href="http://www.w3.org/MarkUp/#recommendations">Hypertext Markup Language (HTML)</a></li>
+			<li><a title="Cascading Style Sheets (CSS)" href="http://www.w3.org/Style/CSS/">Cascading Style Sheets (CSS)</a></li>
+			<li><a title="eXtensible Markup Language (XML) (1.0)" href="http://www.w3.org/TR/2004/REC-xml-20040204/">eXtensible Markup Language (XML) (1.0)</a></li>
+			<li><a title="XML Schema (1.0)" href="http://www.w3.org/XML/Schema#dev">W3C XML Schema</a></li>
+			<li><a title="XML Path Language (XPath) (1.0)" href="http://www.w3.org/TR/xpath">XML Path Language (XPath) (1.0)</a></li>
+			<li><a title="eXtensible Stylesheet Language (XSL) (1.0)" href="http://www.w3.org/Style/XSL/">eXtensible Stylesheet Language (XSL) (1.0)</a></li>
+		</ul>
+		<hr/>
+		<h3>Contact</h3>
+		<ul>
+			<li><a title="Tom Kralidis" href="http://www.omsug.ca/osgis2004/speakers.html#tom_kralidis"><img class="flat" src="http://www.opengeospatial.org/inc/text2png.php?msg=tom.kralidis&amp;domain=ec.gc.ca" alt="Tom Kralidis" title="Tom Kralidis"/></a></li>
+		</ul>
+		<hr/>
+		<p>Last Updated: <script type="text/javascript">document.write(document.lastModified);</script></p>
+		<hr/>
+		<p>
+			<a href="http://validator.w3.org/check?uri=referer" title="[ Valid XHTML 1.0! ]"><img class="flat" src="http://www.w3.org/Icons/valid-xhtml10" alt="[ Valid XHTML 1.0! ]" height="31" width="88"/></a>
+			<a href="http://jigsaw.w3.org/css-validator/check/referer" title="[ Valid CSS! ]"><img class="flat" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="[ Valid CSS! ]" height="31" width="88"/></a>
+		</p>
+	</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!-- $Id: demo.html,v 1.1 2005-12-29 19:06:35 tkralidi Exp $ -->
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="pragma" content="no-cache">
+		<meta http-equiv="Expires" content="Thu, 01 Dec 1994 120000 GMT">
+		<title>MapServer Demo Interface</title>
+		<link rel="stylesheet" type="text/css" media="all" href="../ms_ogc_workshop/demo.css">
+	</head>
+	<body>
+		<center><h1>MapServer Demo Interface</h1></center>
+		<form method="get" action="[program]">
+			<input type="hidden" name="imgxy" value="[center_x] [center_y]">
+			<input type="hidden" name="imgext" value="[mapext]">
+			<input type="hidden" name="map" value="[map]">
+			<input type="hidden" name="savequery" value="true">
+			<input type="hidden" name="program" value="[program]">
+			<input type="hidden" name="map_web_imagepath" value="[map_web_imagepath]">
+			<input type="hidden" name="map_web_imageurl" value="[map_web_imageurl]">
+			<center>
+				<table border="1" cellspacing="0" cellpadding="4">
+					<tr>
+						<td valign="top" align="center">
+							<table cellpadding="0" cellspacing="0" border="0">
+								<tr>
+									<td colspan="2"><input name="img" type="image" src="[img]" alt="map"></td>
+								</tr>
+								<tr>
+									<td>&nbsp;<b>Powered by <a title="Powered by MapServer" href="http://mapserver.gis.umn.edu/">MapServer</a></b></td>
+									<td align="right"><img src="[scalebar]" alt="scalebar" border="0"></td>
+								</tr>
+							</table>
+						</td>
+						<td>
+							<table cellpadding="5" cellspacing="0" border="0">
+								<tr>
+									<td>
+										<center><input type="submit" value="Refresh/Query"></center>
+										<input type="radio" name="mode" value="browse" checked> <b>Browse map</b>
+										<br>
+										<input type="radio" name="mode" value="query"> <b>Query feature</b>
+										<br>
+										<input type="radio" name="mode" value="nquery"> <b>Query multiple features</b>
+										<hr>
+										Zoom In <input type="radio" name="zoomdir" value="1" [zoomdir_1_check]>
+										Pan <input type="radio" name="zoomdir" value="0" [zoomdir_0_check]>
+										Zoom Out <input type="radio" name="zoomdir" value="-1" [zoomdir_-1_check]>
+										<br>
+										Zoom Size <input type="text" name="zoomsize" size="4" value="[zoomsize]">
+										<hr>
+										<table>
+										[legend]
+										</table>
+										<hr>
+										<br>
+										<center><input name="ref" type="image" src="[ref]" alt="ref"></center>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+			</center>
+		</form>
+		<hr>
+		<a href="http://validator.w3.org/check?verbose=1&amp;uri=referer" title="[ Valid HTML 4.01! ]"><img border="0" src="http://www.w3.org/Icons/valid-html401" alt="[ Valid HTML 4.01! ]" height="31" width="88"></a>
+		<a href="http://jigsaw.w3.org/css-validator/check/referer" title="[ Valid CSS! ]"><img class="flat" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="[ Valid CSS! ]" height="31" width="88"/></a>
+	</body>
+</html>

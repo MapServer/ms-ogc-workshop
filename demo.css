@@ -1,0 +1,17 @@
+
+/* $Id: demo.css,v 1.1 2005-12-29 19:06:35 tkralidi Exp $ */
+
+body {
+	font: 12px arial;
+	background-color: #FFFFFF;
+}
+
+.flat {
+	border: 0px;
+}
+
+.centered {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+}

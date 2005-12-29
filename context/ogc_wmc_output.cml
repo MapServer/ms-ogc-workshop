@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding="ISO-8859-1" standalone="no" ?>
+<!-- $Id: ogc_wmc_output.cml,v 1.1 2005-12-29 19:06:35 tkralidi Exp $ -->
+<ViewContext version="1.0.0" id="ms_ogc_workshop" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.opengis.net/context" xsi:schemaLocation="http://www.opengis.net/context http://schemas.opengeospatial.net/context/1.0.0/context.xsd">
+  <General>
+    <Window width="500" height="300"/>
+    <!-- Bounding box corners and spatial reference system -->
+    <BoundingBox SRS="EPSG:4326" minx="-180.000000" miny="-90.000000" maxx="180.000000" maxy="90.000000"/>
+    <!-- Title of Context -->
+    <Title>Sample WMS for MapServer OGC Web Services Workshop</Title>
+    <KeywordList>
+      <Keyword>mapserver</Keyword>
+      <Keyword>ogc</Keyword>
+      <Keyword>workshop</Keyword>
+    </KeywordList>
+    <Abstract>Sample WMS for MapServer OGC Web Services Workshop.  Enjoy!</Abstract>
+    <LogoURL width="300" height="40" format="image/gif">      <OnlineResource xlink:type="simple" xlink:href="http://mapserver.gis.umn.edu/graphics/mapserver.gif"/>
+</LogoURL>
+    <DescriptionURL format="text/html">      <OnlineResource xlink:type="simple" xlink:href="http://mapserver.gis.umn.edu/"/>
+</DescriptionURL>
+    <ContactInformation>
+      <ContactPersonPrimary>
+      <ContactPerson>Tom Kralidis</ContactPerson>
+      <ContactOrganization>Environment Canada</ContactOrganization>
+      </ContactPersonPrimary>
+      <ContactPosition>Senior Systems Scientist</ContactPosition>
+      <ContactAddress>
+        <AddressType>postal</AddressType>
+        <Address>867 Lakeshore Road</Address>
+        <City>Burlington</City>
+        <StateOrProvince>Ontario</StateOrProvince>
+        <PostCode>L7R-4A6</PostCode>
+        <Country>Canada</Country>
+      </ContactAddress>
+      <ContactVoiceTelephone>+01-905-336-4409</ContactVoiceTelephone>
+      <ContactFacsimileTelephone>+01-905-336-4499</ContactFacsimileTelephone>
+  <ContactElectronicMailAddress>tom.kralidis@ec.gc.ca</ContactElectronicMailAddress>
+    </ContactInformation>
+  </General>
+  <LayerList>
+    <Layer queryable="0" hidden="0">
+      <Server service="WMS" version="1.1.0" title="MapServer Users">
+        <OnlineResource xlink:type="simple" xlink:href="http://www.moximedia.com/cgi-bin/ms_users"/>
+      </Server>
+      <Name>MAPSERVER_USERS</Name>
+      <Title>MapServer Users</Title>
+      <Abstract>Simple, non-precise location of MapServer Users</Abstract>
+      <SRS>EPSG:4326</SRS>
+      <FormatList>
+        <Format current="1">image/gif</Format>
+        <Format>image/png</Format>
+        <Format>image/jpeg</Format>
+        <Format>image/wbmp</Format>
+      </FormatList>
+      <StyleList>
+        <Style>
+          <Name>default</Name>
+          <Title>Default Style</Title>
+          <LegendURL width="20" height="20" format="image/gif">            <OnlineResource xlink:type="simple" xlink:href="http://www.moximedia.com/cgi-bin/ms_users?mode=legend&amp;layers=MAPSERVER_USERS"/>
+          </LegendURL>
+        </Style>
+      </StyleList>
+    </Layer>
+  </LayerList>
+</ViewContext>

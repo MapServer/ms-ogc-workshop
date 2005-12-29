@@ -1,0 +1,247 @@
+#
+# $Id: demo_answer.map,v 1.1 2005-12-29 19:06:35 tkralidi Exp $
+#
+# Start of map file
+#
+
+MAP
+
+ # all temp files get prefixed with this string
+ NAME ms_ogc_workshop
+
+ # always returns a map
+ STATUS ON
+
+ # image format options
+ OUTPUTFORMAT
+  NAME png
+  DRIVER "GD/PNG"
+  MIMETYPE "image/png"
+  IMAGEMODE RGB
+  EXTENSION "png"
+ END
+
+ # width / height of map image
+ SIZE 500 300
+
+ # projection of the INTERFACE that this mapfile supports
+ PROJECTION
+  "init=epsg:4326"
+ END
+
+ # minx miny maxx maxy
+ EXTENT -180 -90 180 90 # World
+
+ # units of map/app
+ UNITS DD
+
+ # def pointers for symbols
+
+ SYMBOLSET "../../../etc/symbols/symbols.sym"
+ FONTSET   "../../../etc/fonts/fonts.txt"
+
+ #
+ # Start of web interface definition
+ #
+ WEB
+
+  TEMPLATE "../../../templates/demo.html"
+  HEADER   "../../../templates/query_header.html"
+  FOOTER   "../../../templates/query_footer.html"
+
+  # this is set in the form which initializes the page, but can be set here if you want
+  IMAGEPATH "/ms4w/tmp/ms_tmp/"
+
+  # this is set in the form which initializes the page, but can be set here if you want
+  IMAGEURL "/ms_tmp/"
+ END
+
+ #
+ # Start of reference map
+ #
+ REFERENCE
+  # which image is the base image for refmaps
+  # a area of interest box will be drawn on top of it
+  IMAGE ../../../graphics/refmap_world_4326.gif
+
+  # extents of ref image (minx miny maxx maxy)
+  EXTENT -180 -90 180 90
+
+  # width / height of image
+  SIZE 150 75
+
+  # always generated
+  STATUS ON
+
+  COLOR -1 -1 -1
+
+  # color of outline
+  OUTLINECOLOR 255 0 0
+ END
+
+ #
+ # Start of legend
+ #
+ LEGEND
+  KEYSIZE 18 12
+  LABEL
+   TYPE BITMAP
+   SIZE MEDIUM
+   COLOR 0 0 89
+  END
+  TEMPLATE "../../../templates/legend.html"
+  STATUS ON
+ END
+
+ #
+ # Start of scalebar
+ #
+ SCALEBAR
+  IMAGECOLOR 255 0 0
+  LABEL
+   COLOR 0 0 0
+   SIZE tiny    
+  END
+  STYLE 1
+  SIZE 80 2
+  COLOR 0 0 0
+  UNITS KILOMETERS
+  INTERVALS 1
+  TRANSPARENT TRUE
+  STATUS TRUE
+ END
+
+ # start of querymap object
+ QUERYMAP
+  SIZE 200 200
+  STATUS ON
+  STYLE HILITE
+  COLOR 255 0 0
+ END
+
+ # start of layer definitions
+
+LAYER
+  NAME "MODIS"
+  GROUP "RASTER"
+  TYPE RASTER
+  STATUS ON
+  # this is a remote OGC:WMS
+  CONNECTIONTYPE WMS
+
+  # the server URL prefix
+  # MapServer will add the OGC:WMS specific
+  # keyword value pairs accordingly
+  CONNECTION "http://mapserv2.esrin.esa.it/cubestor/cubeserv/cubeserv.cgi"
+
+  # base info MapServer needs to know to generate the
+  # OGC:WMS GetMap request
+  METADATA
+   # what SRS will be passed
+   # MapServer will reproject if needed
+   # NOTE: reproject the output IMAGE, not the vectors/imagery
+   "wms_srs"             "EPSG:4326"
+
+   # what layer name will be passed
+   "wms_name"            "WORLD_MODIS_1KM:MapAdmin"
+
+   # what version will be passed
+   "wms_server_version"  "1.1.1"
+   "wms_formatlist"      "image/gif,image/png,image/jpeg,image/wbmp"
+   # what DEFAULT format will be passed
+   "wms_format"          "image/png"
+  END
+  #
+  # MapServer will use this information to generate a string like:
+  # <connection>?version=<wms_server_version>&service=WMS&request=GetMap&layers=<wms_name>&srs=<wms_srs>&format=<wms_format>
+  #
+  # missing required keyword value pairs get generated according
+  # to the application using this mapfile, i.e.:
+  # &width=<width>&height=<height>&bbox=<bbox>
+ END
+ 
+ LAYER
+  # name of layer
+  NAME rivers
+  GROUP "VECTOR"
+  # projection: if the data is NOT in the same projection as the global
+  # mapfile, you must explicitly give the native projection code of the data
+  # some common projections:
+  # lat/long: epsg:4326
+  # NRCan LCC: epsg:42304
+  PROJECTION
+   "init=epsg:4236"
+  END
+
+  # what type of data is this?
+  TYPE LINE
+
+  # always returned with interface
+  STATUS ON
+
+  # actual data pointer
+  DATA ../../../data/rivers
+
+  # data is queryable
+  DUMP TRUE
+
+  # query templates for HTML-based queries
+  HEADER   ../../../templates/rivers_query_header.html
+  TEMPLATE ../../../templates/rivers_query_body.html
+  FOOTER   ../../../templates/rivers_query_footer.html
+
+  TOLERANCE 5
+
+  # how will this data look?
+  CLASS
+   NAME "Rivers"
+   COLOR 0 0 255
+  END
+ END
+
+LAYER
+  NAME "IBA"
+  GROUP "RASTER"
+  TYPE RASTER
+  STATUS ON
+  # this is a remote OGC:WMS
+  CONNECTIONTYPE WMS
+
+  # the server URL prefix
+  # MapServer will add the OGC:WMS specific
+  # keyword value pairs accordingly
+  CONNECTION "http://www.bsc-eoc.org/cgi-bin/bsc_ows.asp"
+
+  # base info MapServer needs to know to generate the
+  # OGC:WMS GetMap request
+  METADATA
+   # what SRS will be passed
+   # MapServer will reproject if needed
+   # NOTE: reproject the output IMAGE, not the vectors/imagery
+   "wms_srs"             "EPSG:4326"
+
+   # what layer name will be passed
+   "wms_name"            "IBA"
+
+   # what version will be passed
+   "wms_server_version"  "1.1.1"
+   "wms_formatlist"      "image/gif,image/png,image/jpeg,image/wbmp"
+   # what DEFAULT format will be passed
+   "wms_format"          "image/png"
+   
+   # here, you can put a URL to the SLD you want to work with
+   #"wms_sld_url" "http://devgeo.cciw.ca/ms_tmp/iba_sld.xml"
+   
+   # OR, set "wms_sld_body" "AUTO", which generates and passes an SLD on the fly based on the CLASS defs
+   # note, you have to have a CLASS object defined in this LAYER
+  END
+  #
+  # MapServer will use this information to generate a string like:
+  # <connection>?version=<wms_server_version>&service=WMS&request=GetMap&layers=<wms_name>&srs=<wms_srs>&format=<wms_format>
+  #
+  # missing required keyword value pairs get generated according
+  # to the application using this mapfile, i.e.:
+  # &width=<width>&height=<height>&bbox=<bbox>
+ END 
+ 
+END

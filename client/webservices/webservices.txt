@@ -1,0 +1,23 @@
+
+<!-- $Id: webservices.txt,v 1.1 2005-12-29 19:06:35 tkralidi Exp $ -->
+Web Services
+
+URLs and sample requests
+
+Compusult Gazetteer WFS (World):
+http://ogc.compusult.nf.ca/cgi-bin/OGC/gazetteers/wfs?version=1.0.0&request=GetFeature&typename=GazetteerEntry&filter=<Filter><PropertyIsLike><PropertyName>name</PropertyName><Literal>toronto</Literal></PropertyIsLike></Filter>
+
+CGDI Postal Code Lookup Service (Canada):
+http://geoservices.cgdi.ca/cgi-bin/postalcode/postalcode.cgi?version=1.0.0&request=GetPostalCode&code=m6m
+
+CGNS Gazetteer WFS (Canada)
+http://cgns.nrcan.gc.ca/wfs/cubeserv.cgi?datastore=cgns&version=1.0.0&service=WFS&request=GetFeature&typename=GEONAMES&filter=<Filter><PropertyIsLike><PropertyName>GEONAME</PropertyName><Literal>Toronto</Literal></PropertyIsLike></Filter>
+
+NTS Lookup Service (Canada)
+http://geoservices.cgdi.ca/NTS/NTSLookup?version=1.1.0&request=GetMapsheet&mapsheet=31G5
+
+Environment Canada Watershed Lookup Service (Canada)
+http://devgeo.cciw.ca/WatershedLookupServlet/WatershedLookupServlet?version=1.0.0&request=GetWatershed&code=01
+
+FGDC Zipcode Lookup Service (United States)
+http://edcw2ks15.cr.usgs.gov/Scripts/perls.pl?featuretype=zip_poly&where=zip+in+(90210)

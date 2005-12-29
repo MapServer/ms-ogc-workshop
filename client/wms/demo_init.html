@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- $Id: demo_init.html,v 1.1 2005-12-29 19:06:35 tkralidi Exp $ -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<meta http-equiv="Content-Style-Type" content="text/css" />
+		<meta http-equiv="pragma" content="no-cache"/>
+		<meta http-equiv="Expires" content="Thu, 01 Dec 1994 120000 GMT"/>
+		<title>MapServer OGC Web Services Workshop</title>
+		<link rel="stylesheet" media="all" href="../../demo.css" type="text/css"/>
+	</head>
+	<body>
+		<h2>MapServer Demo Interface</h2>
+		<hr/>
+		<ul>
+			<li>Files related to this interface are at <a href="./" title="/ms4w/apps/ms_ogc_workshop/client/wms/">/ms4w/apps/ms_ogc_workshop/client/wms/</a></li>
+		</ul>
+		<form method="get" action="/cgi-bin/mapserv.exe">
+			<p>
+				<input type="hidden" name="map" value="/ms4w/apps/ms_ogc_workshop/client/wms/demo.map"/>
+				<input type="hidden" name="layer" value="MAPSERVER_USERS"/>
+				<input type="hidden" name="layer" value="rivers"/>
+				<input type="hidden" name="layer" value="land_shallow_topo_2048"/>
+				<input type="hidden" name="zoomsize" value="2"/>
+				<input type="hidden" name="zoomdir" value="1"/>
+				<input type="hidden" name="program" value="/cgi-bin/mapserv.exe"/>
+				<input type="hidden" name="map_web_imagepath" value="/ms4w/tmp/ms_tmp/"/>
+				<input type="hidden" name="map_web_imageurl" value="/ms_tmp/"/>
+				<input type="submit" value="Initialize"/>
+			</p>
+		</form>
+		<hr/>
+		<p>
+			<a href="http://validator.w3.org/check?uri=referer" title="[ Valid XHTML 1.0! ]"><img class="flat" src="http://www.w3.org/Icons/valid-xhtml10" alt="[ Valid XHTML 1.0! ]" height="31" width="88"/></a>
+			<a href="http://jigsaw.w3.org/css-validator/check/referer" title="[ Valid CSS! ]"><img class="flat" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="[ Valid CSS! ]" height="31" width="88"/></a>
+		</p>
+	</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- $Id: demo.html,v 1.1 2005-12-29 19:06:35 tkralidi Exp $ -->
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta http-equiv="pragma" content="no-cache"/>
+		<meta http-equiv="Expires" content="Thu, 01 Dec 1994 120000 GMT"/>
+		<title>MapServer Demo Interface</title>
+	</head>
+	<body bgcolor="#ffffff">
+		<center><h1>MapServer Demo Interface</h1></center>
+		<hr noshade/>
+		<form method="get" action="[program]">
+			<center>
+				<table border="1" cellspacing="0" cellpadding="4">
+					<tr>
+						<td valign="top" align="center">
+							<table cellpadding="0" cellspacing="0" border="0">
+								<tr>
+									<td colspan="2"><input name="img" type="image" src="[img]" alt="map" width="[mapwidth]" height="[mapheight]" border="0"/></td>
+								</tr>
+								<tr>
+									<td>&nbsp;<font size="-1" face="arial,helvetica" color="#000000"><b>Powered by <a title="Powered by MapServer" href="http://mapserver.gis.umn.edu/">MapServer</a></b></font></td>
+									<td align="right"><img src="[scalebar]" alt="scalebar" border="0"/></td>
+								</tr>
+							</table>
+						</td>
+						<td valign="top" bgcolor="#ffffff">
+							<table cellpadding="5" cellspacing="0" border="0" bgcolor="#ffffff">
+								<tr>
+									<td>
+										<center><input type="submit" value="Refresh/Query"/></center>
+										<p>
+											<input type="radio" name="mode" value="browse" checked/> <b>Browse map</b>
+											<br/>
+											<input type="radio" name="mode" value="query"/> <b>Query feature</b>
+											<br/>
+											<input type="radio" name="mode" value="nquery"/> <b>Query multiple features</b>
+											<hr noshade/>
+										</p>
+										<p>
+											Zoom In <input type="radio" name="zoomdir" value="1" [zoomdir_1_check]/>
+											Pan <input type="radio" name="zoomdir" value="0" [zoomdir_0_check]/>
+											Zoom Out <input type="radio" name="zoomdir" value="-1" [zoomdir_-1_check]/>
+										</p>
+										<p>
+											Zoom Size <input type="text" name="zoomsize" size="4" value="[zoomsize]"/>
+											<input type="button" name="gaz" value="Zoom to Placename" onclick="javascript:void(window.open('/ms_ogc_workshop/client/webservices/gazetteer.php?action=init','gazWin', 'toolbar=no,status=no,menubar=no,scrollbars=no,resizable=yes,width=440,height=400'));"/>
+											<hr noshade/>
+										</p>
+										<p>
+											<table>
+											[legend]
+											</table>
+											<hr noshade/>
+										</p>
+										<p>
+											<center><input name="ref" type="image" src="[ref]" alt="ref" border="1"/></center>
+										</p>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+			</center>
+			<input type="hidden" name="imgxy" value="[center_x] [center_y]"/>
+			<input type="hidden" name="imgext" value="[mapext]"/>
+			<input type="hidden" name="map" value="[map]"/>
+			<input type="hidden" name="savequery" value="true"/>
+			<input type="hidden" name="program" value="[program]"/>
+			<input type="hidden" name="map_web_imagepath" value="[map_web_imagepath]"/>
+			<input type="hidden" name="map_web_imageurl" value="[map_web_imageurl]"/>
+			<!--
+
+			for zoom to point type functions:
+			- set the xy centroid
+			- set the buffer
+
+			-->
+			<input type="hidden" name="mapxy" value=""/>
+			<input type="hidden" name="buffer" value=""/>
+		</form>
+		<p>
+			<hr noshade/>
+		</p>
+	</body>
+</html>
