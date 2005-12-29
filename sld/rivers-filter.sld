@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!-- $Id: rivers-filter.sld,v 1.1 2005-12-29 19:06:35 tkralidi Exp $ -->
+<!-- $Id: rivers-filter.sld,v 1.1.1.1 2005-12-29 19:06:35 tkralidi Exp $ -->
 <StyledLayerDescriptor  version="1.0.0"
 			xmlns="http://www.opengis.net/sld"
 			xmlns:ogc="http://www.opengis.net/ogc"

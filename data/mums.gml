@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<!-- $Id: mums.gml,v 1.1 2005-12-29 19:06:35 tkralidi Exp $ -->
+<!-- $Id: mums.gml,v 1.1.1.1 2005-12-29 19:06:35 tkralidi Exp $ -->
 <MapServerUserMeetings xmlns="http://localhost/ms_ogc_workshop" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://localhost/ms_ogc_workshop ./mums.xsd">
 	<gml:description>This is a GML document which provides locations of all MapServer User Meeting that have taken place</gml:description>
 	<gml:name>MapServer User Meetings</gml:name>

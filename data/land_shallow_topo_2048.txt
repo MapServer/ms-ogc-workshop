@@ -1,5 +1,5 @@
 
-$Id: land_shallow_topo_2048.txt,v 1.1 2005-12-29 19:06:35 tkralidi Exp $
+$Id: land_shallow_topo_2048.txt,v 1.1.1.1 2005-12-29 19:06:35 tkralidi Exp $
 
 DATA "http://earthobservatory.nasa.gov/Newsroom/BlueMarble/Images/land_shallow_topo_2048.tif"
 

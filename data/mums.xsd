@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- $Id: mums.xsd,v 1.1 2005-12-29 19:06:35 tkralidi Exp $ -->
+<!-- $Id: mums.xsd,v 1.1.1.1 2005-12-29 19:06:35 tkralidi Exp $ -->
 <xs:schema targetNamespace="http://localhost/ms_ogc_workshop"
            xmlns:gml="http://www.opengis.net/gml"
            xmlns:mum="http://localhost/ms_ogc_workshop"

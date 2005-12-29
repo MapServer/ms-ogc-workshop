@@ -1,6 +1,6 @@
 <?php
 //
-// $Id: OGC_WMC_mapfile2context.php,v 1.1 2005-12-29 19:06:35 tkralidi Exp $
+// $Id: OGC_WMC_mapfile2context.php,v 1.1.1.1 2005-12-29 19:06:35 tkralidi Exp $
 //
 // load mapscript and DBase
 // check what OS this is running on

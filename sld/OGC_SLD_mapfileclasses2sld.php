@@ -1,7 +1,7 @@
 <?php
 
 //
-// $Id: OGC_SLD_mapfileclasses2sld.php,v 1.1 2005-12-29 19:06:35 tkralidi Exp $
+// $Id: OGC_SLD_mapfileclasses2sld.php,v 1.1.1.1 2005-12-29 19:06:35 tkralidi Exp $
 //
 // load mapscript
 // check what OS this is running on

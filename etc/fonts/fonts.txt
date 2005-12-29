@@ -1,5 +1,5 @@
 #
-# $Id: fonts.txt,v 1.1 2005-12-29 19:06:35 tkralidi Exp $
+# $Id: fonts.txt,v 1.1.1.1 2005-12-29 19:06:35 tkralidi Exp $
 #
 fritqat			fritqat.ttf
 fritqat-bold                    fritqtb0.ttf
