@@ -1,0 +1,18 @@
+
+$Id: HISTORY.txt,v 1.1 2005-12-29 21:27:27 tkralidi Exp $
+
+MapServer OGC Web Services Workshop Revision History
+====================================================
+
+This is a human-readable revision history which will attempt to document required changes for users to migrate from one version of MapServer to the next.  Developers are strongly encouraged to document their changes and their impacts on the users here (please add the most recent changes to the top of the list).
+
+For a complete change history, please see the CVS log comments.
+
+
+CVS HEAD
+--------
+
+Version 1.0.0 (2005-12-29)
+------------------------------
+
+- Initial packaging as 1.0.0
