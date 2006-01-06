@@ -1,5 +1,5 @@
 
-$Id: HISTORY.txt,v 1.1 2005-12-29 21:27:27 tkralidi Exp $
+$Id: HISTORY.txt,v 1.2 2006-01-06 19:30:15 tkralidi Exp $
 
 MapServer OGC Web Services Workshop Revision History
 ====================================================
@@ -11,6 +11,12 @@ For a complete change history, please see the CVS log comments.
 
 CVS HEAD
 --------
+
+Version 1.0.1 (2006-xx-xx)
+------------------------------
+
+- Fixed corrupt data/rivers files (not imported into CVS correctly)
+
 
 Version 1.0.0 (2005-12-29)
 ------------------------------
