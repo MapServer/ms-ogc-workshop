@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<!-- $Id: index.html,v 1.2 2005-12-30 18:53:27 tkralidi Exp $ -->
+<!-- $Id: index.html,v 1.3 2006-04-12 03:10:59 tkralidi Exp $ -->
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
@@ -107,32 +107,41 @@
 			<li><a title="Publishing as OGC:WCS (GetCoverage)" href="/cgi-bin/mapserv.exe?map=/ms4w/apps/ms_ogc_workshop/service/config.map&amp;version=1.0.0&amp;service=WCS&amp;request=GetCoverage&amp;coverage=toronto&amp;crs=EPSG:26917&amp;resx=500&amp;resy=500&amp;format=GEOTIFF_RGB">Publishing as OGC:WCS (GetCoverage)</a> -- mapfile <a title="mapfile here" href="service/config.map">here</a></li>
 		</ul>
 
-		<h4>9./ Consuming OGC:WMS</h4>
+		<h4>9./ Publishing OGC:SOS</h4>
+
+		<ul>
+			<li><a title="Publishing as OGC:SOS (GetCapabilities)" href="/cgi-bin/mapserv.exe?map=/ms4w/apps/ms_ogc_workshop/service/config.map&amp;service=SOS&amp;request=GetCapabilities">Publishing as OGC:SOS (GetCapabilities)</a> -- mapfile <a title="mapfile here" href="service/config.map">here</a></li>
+			<li><a title="Publishing as OGC:SOS (DescribeSensor)" href="/cgi-bin/mapserv.exe?map=/ms4w/apps/ms_ogc_workshop/service/config.map&amp;service=SOS&amp;request=DescribeSensor&amp;sensorid=SOMEID">Publishing as OGC:SOS (DescribeCoverage)</a> -- mapfile <a title="mapfile here" href="service/config.map">here</a></li>
+			<li><a title="Publishing as OGC:SOS (GetObservation)" href="/cgi-bin/mapserv.exe?map=/ms4w/apps/ms_ogc_workshop/service/config.map&amp;service=SOS&amp;request=GetObservation&amp;coverage=toronto&amp;crs=EPSG:26917&amp;resx=500&amp;resy=500&amp;format=GEOTIFF_RGB">Publishing as OGC:SOS (GetObservation)</a> -- mapfile <a title="mapfile here" href="service/config.map">here</a></li>
+		</ul>
+
+
+		<h4>10./ Consuming OGC:WMS</h4>
 
 		<ul>
 			<li><a title="Consuming OGC:WMS" href="client/wms/demo_init.html">Consuming OGC:WMS</a> -- mapfile <a title="mapfile here" href="client/wms/demo.map">here</a></li>
 		</ul>
 
-		<h4>10./ Consuming OGC:WFS</h4>
+		<h4>11./ Consuming OGC:WFS</h4>
 
 		<ul>
 			<li><a title="Consuming OGC:WFS" href="client/wfs/demo_init.html">Consuming OGC:WFS</a> -- mapfile <a title="mapfile here" href="client/wfs/demo.map">here</a></li>
 		</ul>
 
-		<h4>11./ Consuming OGC:GML</h4>
+		<h4>12./ Consuming OGC:GML</h4>
 
 		<ul>
 			<li><a title="Consuming OGC:GML as a static document" href="client/gml/demo_init.html">Consuming OGC:GML as a static document</a> -- mapfile <a title="mapfile here" href="client/gml/demo.map">here</a> -- GML document <a href="data/mums.gml" title="GML document here">here</a> -- GML application schema <a href="data/mums.xsd" title="GML application schema here">here</a> -- GML structure (OGR .gfs file) <a href="data/mums.gfs" title="GML structure (OGR .gfs file) here">here</a></li>
 		</ul>
 
-		<h4>12./ Consuming OGC:WMC</h4>
+		<h4>13./ Consuming OGC:WMC</h4>
 
 		<ul>
 			<li><a title="Publishing as OGC:WMC with MapServer CGI" href="/cgi-bin/mapserv.exe?map=/ms4w/apps/ms_ogc_workshop/context/demo.map&amp;request=GetContext">Publishing as OGC:WMC with MapServer CGI</a> -- mapfile <a title="mapfile here" href="context/demo.map">here</a></li>
 			<li><a title="Publishing as OGC:WMC with Mapscript" href="context/OGC_WMC_mapfile2context.php">Publishing as OGC:WMC with Mapscript</a> -- mapfile <a title="mapfile here" href="context/demo.map">here</a></li>
 		</ul>
 
-		<h4>13./ Consuming Remote Web Services</h4>
+		<h4>14./ Consuming Remote Web Services</h4>
 
 		<ul>
 			<li><a title="Consuming Gazetteer Web Services with PHP middleware" href="client/webservices/demo_init.html">Consuming Gazetteer Web Services with PHP middleware</a> -- mapfile <a title="mapfile here" href="client/webservices/demo.map">here</a></li>
@@ -165,18 +174,19 @@
 
 		<h3>Links of Interest</h3>
 		<ul>
-			<li><a title="MapServer Documentation Index" href="http://mapserver.gis.umn.edu/doc/">MapServer Documentation Index</a></li>
-			<li><a title="MapServer Mapfile HOWTO" href="http://mapserver.gis.umn.edu/doc/mapfile-reference.html">MapServer Mapfile HOWTO</a></li>
-			<li><a title="MapServer WMS Client HOWTO" href="http://mapserver.gis.umn.edu/doc/wms-client-howto.html">MapServer WMS Client HOWTO</a></li>
-			<li><a title="MapServer WMS Server HOWTO" href="http://mapserver.gis.umn.edu/doc/wms-server-howto.html">MapServer WMS Server HOWTO</a></li>
-			<li><a title="MapServer WMS Time Support HOWTO" href="http://mapserver.gis.umn.edu/doc/wms-time-support-howto.html">MapServer WMS Time Support HOWTO</a></li>
-			<li><a title="MapServer WFS Client HOWTO" href="http://mapserver.gis.umn.edu/doc/wfs-client-howto.html">MapServer WFS Client HOWTO</a></li>
-			<li><a title="MapServer WFS Server HOWTO" href="http://mapserver.gis.umn.edu/doc/wfs-server-howto.html">MapServer WFS Server HOWTO</a></li>
-			<li><a title="MapServer Filter Encoding HOWTO" href="http://mapserver.gis.umn.edu/doc/filter-encoding-howto.html">MapServer Filter Encoding HOWTO</a></li>
-			<li><a title="MapServer Web Map Context Documents HOWTO" href="http://mapserver.gis.umn.edu/doc/mapcontext-howto.html">MapServer Web Map Context Documents HOWTO</a></li>
-			<li><a title="MapServer SLD HOWTO" href="http://mapserver.gis.umn.edu/doc/sld-howto.html">MapServer SLD HOWTO</a></li>
+			<li><a title="MapServer Documentation Index" href="http://mapserver.gis.umn.edu/docs">MapServer Documentation Index</a></li>
+			<li><a title="MapServer Mapfile Reference" href="http://mapserver.gis.umn.edu/docs/reference/mapfile">MapServer Mapfile Reference</a></li>
+			<li><a title="MapServer WMS Client HOWTO" href="http://mapserver.gis.umn.edu/docs/howto/wms_client">MapServer WMS Client HOWTO</a></li>
+			<li><a title="MapServer WMS Server HOWTO" href="http://mapserver.gis.umn.edu/docs/howto/wms_server">MapServer WMS Server HOWTO</a></li>
+			<li><a title="MapServer WMS Time Support HOWTO" href="http://mapserver.gis.umn.edu/docs/howto/wms_time_support">MapServer WMS Time Support HOWTO</a></li>
+			<li><a title="MapServer WFS Client HOWTO" href="http://mapserver.gis.umn.edu/docs/howto/wfs_client">MapServer WFS Client HOWTO</a></li>
+			<li><a title="MapServer WFS Server HOWTO" href="http://mapserver.gis.umn.edu/docs/howto/wfs_server">MapServer WFS Server HOWTO</a></li>
+			<li><a title="MapServer SOS Server HOWTO" href="http://mapserver.gis.umn.edu/docs/howto/sos_server">MapServer SOS Server HOWTO</a></li>
+			<li><a title="MapServer Filter Encoding HOWTO" href="http://mapserver.gis.umn.edu/docs/howto/filterencoding">MapServer Filter Encoding HOWTO</a></li>
+			<li><a title="MapServer Web Map Context Documents HOWTO" href="http://mapserver.gis.umn.edu/docs/howto/mapcontext">MapServer Web Map Context Documents HOWTO</a></li>
+			<li><a title="MapServer SLD HOWTO" href="http://mapserver.gis.umn.edu/docs/howto/sldhowto">MapServer SLD HOWTO</a></li>
 			<li><a title="MapServer Filter Wiki Page" href="http://www2.dmsolutions.ca/tmp/mapserver_fe.html">MapServer Filter Wiki Page</a></li>
-			<li><a title="MapServer WCS Wiki Page" href="http://mapserver.gis.umn.edu/cgi-bin/wiki.pl?WCSMapServer">MapServer WCS Wiki Page</a></li>
+			<li><a title="MapServer WCS Server HOWTO" href="http://mapserver.gis.umn.edu/docs/howto/wcs_server">MapServer WCS Server HOWTO</a></li>
 			<li><a title="OGR GML Support" href="http://gdal.maptools.org/ogr/drv_gml.html">OGR GML Support</a></li>
 		</ul>
 		<ul>
@@ -191,6 +201,7 @@
 			<li><a title="OGC:WMS Specification (1.1.1)" href="http://www.opengeospatial.org/docs/01-068r2.pdf">OGC:WMS Specification (1.1.1)</a></li>
 			<li><a title="OGC:SLD Specification (1.0.0)" href="http://www.opengeospatial.org/docs/02-070.pdf">OGC:SLD Specification (1.0.0)</a></li>
 			<li><a title="OGC:WFS Specification (1.0.0)" href="http://www.opengeospatial.org/docs/02-058.pdf">OGC:WFS Specification (1.0.0)</a></li>
+			<li><a title="OGC:SOS Discussion Paper (0.0.31)" href="http://portal.opengeospatial.org/files/?artifact_id=12846">OGC:SOS Discussion Paper (0.0.31)</a></li>
 			<li><a title="OGC Filter Encoding Specification (1.0.0)" href="http://www.opengeospatial.org/docs/02-059.pdf">OGC Filter Encoding Specification (1.0.0)</a></li>
 			<li><a title="OGC:GML Specification (2.1.1)" href="http://www.opengeospatial.org/docs/02-009.pdf">OGC:GML Specification (2.1.1)</a></li>
 			<li><a title="OGC:GML Specification (2.1.2)" href="http://www.opengeospatial.org/docs/02-069.pdf">OGC:GML Specification (2.1.2)</a></li>
