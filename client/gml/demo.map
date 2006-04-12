@@ -1,5 +1,5 @@
 #
-# $Id: demo.map,v 1.1 2005-12-29 19:06:35 tkralidi Exp $
+# $Id: demo.map,v 1.2 2006-04-12 03:11:26 tkralidi Exp $
 #
 # Start of map file
 #
@@ -247,6 +247,16 @@ MAP
    COLOR 0 255 255
    OUTLINECOLOR 0 0 0
   END 
+
+  CLASS
+   NAME "2006"
+   EXPRESSION /2006/
+   SYMBOL 2
+   SIZE 10
+   COLOR 0 255 255
+   OUTLINECOLOR 0 0 0
+  END 
+
   
   # data is queryable
   DUMP TRUE
