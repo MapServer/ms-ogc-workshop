@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<!-- $Id: mums.gml,v 1.3 2006-01-06 18:49:42 tkralidi Exp $ -->
+<!-- $Id: mums.gml,v 1.4 2006-04-12 03:11:49 tkralidi Exp $ -->
 <MapServerUserMeetings xmlns="http://localhost/ms_ogc_workshop" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://localhost/ms_ogc_workshop ./mums.xsd">
 	<gml:description>This is a GML document which provides locations of all MapServer User Meeting that have taken place</gml:description>
 	<gml:name>MapServer User Meetings</gml:name>
@@ -66,5 +66,22 @@
 			<website>http://mapserver.gis.umn.edu/mum/mtg2005.html</website>
 		</Meeting>
 	</gml:featureMember>
-	<dateCreated>2004-12-17T10:40:35Z</dateCreated>
+	<gml:featureMember>
+		<Meeting>
+			<gml:description>This was where the fourth meeting was held</gml:description>
+			<gml:name>Lausanne</gml:name>
+			<gml:location>
+				<gml:Point srsName="http://www.opengis.net/gml/srs/epsg.xml#4326">
+					<gml:coord>
+						<gml:X>6.6666667</gml:X>
+						<gml:Y>46.5333333</gml:Y>
+					</gml:coord>
+				</gml:Point>
+			</gml:location>
+			<year>2006</year>
+			<venue>Lausanne, Switzerland</venue>
+			<website>http://www.foss4g2006.org/</website>
+		</Meeting>
+	</gml:featureMember>
+	<dateCreated>2006-04-11T14:46:39Z</dateCreated>
 </MapServerUserMeetings>
