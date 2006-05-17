@@ -1,5 +1,4 @@
 <?xml version='1.0' encoding="ISO-8859-1" standalone="no" ?>
-<!-- $Id: ogc_wmc_output.cml,v 1.1 2005-12-29 19:06:35 tkralidi Exp $ -->
 <ViewContext version="1.0.0" id="ms_ogc_workshop" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.opengis.net/context" xsi:schemaLocation="http://www.opengis.net/context http://schemas.opengeospatial.net/context/1.0.0/context.xsd">
   <General>
     <Window width="500" height="300"/>
