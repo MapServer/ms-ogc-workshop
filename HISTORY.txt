@@ -1,5 +1,5 @@
 
-$Id: HISTORY.txt,v 1.4 2006-04-12 03:10:37 tkralidi Exp $
+$Id: HISTORY.txt,v 1.5 2006-06-13 20:13:21 tkralidi Exp $
 
 MapServer OGC Web Services Workshop Revision History
 ====================================================
@@ -18,7 +18,7 @@ Version x.x.x (yyyy-mm-dd)
 - Added documentation for SOS
 - Added mapfile hooks for SOS
 - added and modified MapServer HOWTO links
-
+- added links for Mapscript OWS services
 
 Version 1.0.1 (2006-01-06)
 ------------------------------
