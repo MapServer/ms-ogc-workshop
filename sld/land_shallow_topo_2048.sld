@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!-- $Id: land_shallow_topo_2048.sld,v 1.1 2005-12-29 19:06:35 tkralidi Exp $ -->
+<!-- $Id: land_shallow_topo_2048.sld,v 1.2 2006-07-22 15:00:20 tkralidi Exp $ -->
 <StyledLayerDescriptor  version="1.0.0"
 			xmlns="http://www.opengis.net/sld"
 			xmlns:ogc="http://www.opengis.net/ogc"
@@ -20,9 +20,9 @@
 					<RasterSymbolizer>
 						<Opacity>1.0</Opacity>
 						<ColorMap>
-							<ColorMapEntry color="#ff0000" quantity="85"/>
-							<ColorMapEntry color="#00ff00" quantity="170"/>
-							<ColorMapEntry color="#0000ff" quantity="255"/>
+							<ColorMapEntry color="#ff0000" quantity="85" label="class 1"/>
+							<ColorMapEntry color="#00ff00" quantity="170" label="class 2"/>
+							<ColorMapEntry color="#0000ff" quantity="255" label="class 3"/>
 						</ColorMap>
 					</RasterSymbolizer>
 				</Rule>
