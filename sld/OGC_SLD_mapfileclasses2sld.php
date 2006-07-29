@@ -1,7 +1,7 @@
 <?php
 
 //
-// $Id: OGC_SLD_mapfileclasses2sld.php,v 1.1 2005-12-29 19:06:35 tkralidi Exp $
+// $Id: OGC_SLD_mapfileclasses2sld.php,v 1.2 2006-07-29 02:32:55 tkralidi Exp $
 //
 // load mapscript
 // check what OS this is running on
@@ -13,7 +13,7 @@ else {
 }
 
 if (!extension_loaded("MapScript")) {
-  dl("php_mapscript_46.$dlext");
+  dl("php_mapscript_49.$dlext");
 }
 
 // instantiate a new Map Object
@@ -50,7 +50,7 @@ $sldString = $oMap->generatesld();
 				<td>
 					<pre>
 // load mapscript
-dl("php_mapscript_46.dll");
+dl("php_mapscript_49.dll");
 
 // instantiate a new Map Object
 // with the mapfile as an argument
