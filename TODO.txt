@@ -1,0 +1,2 @@
+
+- add support for OGC:SOS
