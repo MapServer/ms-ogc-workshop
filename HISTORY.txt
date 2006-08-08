@@ -1,5 +1,5 @@
 
-$Id: HISTORY.txt,v 1.5 2006-06-13 20:13:21 tkralidi Exp $
+$Id: HISTORY.txt,v 1.6 2006-08-08 19:04:38 tkralidi Exp $
 
 MapServer OGC Web Services Workshop Revision History
 ====================================================
@@ -12,13 +12,14 @@ For a complete change history, please see the CVS log comments.
 CVS HEAD
 --------
 
-Version x.x.x (yyyy-mm-dd)
+Version 1.0.2 (2006-08-06)
 ------------------------------
 
 - Added documentation for SOS
-- Added mapfile hooks for SOS
+- Added initial mapfile hooks for SOS
 - added and modified MapServer HOWTO links
 - added links for Mapscript OWS services
+- fixed projection codes 4236 to 4326
 
 Version 1.0.1 (2006-01-06)
 ------------------------------
