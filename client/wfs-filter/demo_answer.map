@@ -1,5 +1,5 @@
 #
-# $Id: demo_answer.map,v 1.1 2005-12-29 19:06:35 tkralidi Exp $
+# $Id: demo_answer.map,v 1.2 2006-08-08 19:02:46 tkralidi Exp $
 #
 # Start of map file
 #
@@ -132,7 +132,7 @@ MAP
   # lat/long: epsg:4326
   # NRCan LCC: epsg:42304
   PROJECTION
-   "init=epsg:4236"
+   "init=epsg:4326"
   END
 
   # what type of data is this?
@@ -164,7 +164,7 @@ MAP
   # lat/long: epsg:4326
   # NRCan LCC: epsg:42304
   PROJECTION
-   "init=epsg:4236"
+   "init=epsg:4326"
   END
 
   # what type of data is this?
