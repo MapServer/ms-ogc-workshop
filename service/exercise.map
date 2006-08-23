@@ -1,5 +1,5 @@
 #
-# $Id: exercise.map,v 1.1 2005-12-29 19:06:35 tkralidi Exp $
+# $Id: exercise.map,v 1.2 2006-08-23 18:15:07 tkralidi Exp $
 #
 # Start of map file
 #
@@ -94,7 +94,7 @@ MAP
    # sets base URL for OGC Schemas so the root element in the
    # Capabilities document points to the correct schema location
    # to produce valid XML
-   "ows_schemas_location" "http://schemas.opengeospatial.net"
+   "ows_schemas_location" "http://schemas.opengis.net"
 
    # unified OWS tags
 

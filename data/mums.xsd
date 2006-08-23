@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- $Id: mums.xsd,v 1.3 2006-01-06 18:49:42 tkralidi Exp $ -->
+<!-- $Id: mums.xsd,v 1.4 2006-08-23 18:15:07 tkralidi Exp $ -->
 <xs:schema targetNamespace="http://localhost/ms_ogc_workshop"
            xmlns:gml="http://www.opengis.net/gml"
            xmlns:mum="http://localhost/ms_ogc_workshop"
@@ -17,7 +17,7 @@
 	
 	<!-- import the OGC GML schemas you need to *refer* to when defining features, etc. -->
 	
-	<xs:import namespace="http://www.opengis.net/gml" schemaLocation="http://schemas.opengeospatial.net/gml/3.0.0/base/feature.xsd"/>
+	<xs:import namespace="http://www.opengis.net/gml" schemaLocation="http://schemas.opengis.net/gml/3.0.0/base/feature.xsd"/>
 	
 	<!--
 	
