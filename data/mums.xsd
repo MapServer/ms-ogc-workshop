@@ -1,24 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- $Id: mums.xsd,v 1.4 2006-08-23 18:15:07 tkralidi Exp $ -->
-<xs:schema targetNamespace="http://localhost/ms_ogc_workshop"
-           xmlns:gml="http://www.opengis.net/gml"
-           xmlns:mum="http://localhost/ms_ogc_workshop"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           elementFormDefault="qualified"
-           attributeFormDefault="unqualified"
-           version="1.0.0">
-        
-        <!-- metadata type info for the schema -->
-	
+<!-- $Id: mums.xsd,v 1.5 2006-08-23 18:18:51 tkralidi Exp $ -->
+<xs:schema xmlns:gml="http://www.opengis.net/gml" xmlns:mum="http://localhost/ms_ogc_workshop" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://localhost/ms_ogc_workshop" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0.0">
+	<!-- metadata type info for the schema -->
 	<xs:annotation>
 		<xs:appinfo>mums.xsd 2004/10/02</xs:appinfo>
 		<xs:documentation xml:lang="en">GML schema for data for MapServer OGC Web Services Workshop</xs:documentation>
 	</xs:annotation>
-	
 	<!-- import the OGC GML schemas you need to *refer* to when defining features, etc. -->
-	
-	<xs:import namespace="http://www.opengis.net/gml" schemaLocation="http://schemas.opengis.net/gml/3.0.0/base/feature.xsd"/>
-	
+	<xs:import namespace="http://www.opengis.net/gml" schemaLocation="http://schemas.opengis.net/gml/3.1.1/base/feature.xsd"/>
 	<!--
 	
 	Basic object model:
@@ -43,7 +32,6 @@
 	What the GML application schemas allow us to do is 'extend' the GML model with our specific info
 	
 	-->
-	
 	<!--
 	
 
@@ -58,9 +46,7 @@
 	This has to be an XML Schema 'global' element.
 	
 	-->
-	
 	<xs:element name="MapServerUserMeetings" type="mum:MapServerUserMeetingsType" substitutionGroup="gml:_FeatureCollection"/>
-	
 	<!--
 
 	
@@ -70,8 +56,6 @@
 	document.
 	
 	-->
-	
-
 	<xs:complexType name="MapServerUserMeetingsType">
 		<xs:complexContent>
 			<xs:extension base="gml:AbstractFeatureCollectionType">
@@ -81,7 +65,6 @@
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
-	
 	<!--
 
 	
@@ -90,22 +73,19 @@
 	elements in the sequence tag.
 	
 	-->
-	
-
 	<xs:element name="Meeting" substitutionGroup="gml:_Feature">
 		<xs:complexType>
 			<xs:complexContent>
 				<xs:extension base="gml:AbstractFeatureType">
 					<xs:sequence>
-						<xs:element name="year" type="xs:integer" minOccurs="1" maxOccurs="1"/>
-						<xs:element name="venue" type="xs:string" minOccurs="1" maxOccurs="1"/>
-						<xs:element name="website" type="xs:anyURI" minOccurs="1" maxOccurs="1"/>
+						<xs:element name="year" type="xs:integer"/>
+						<xs:element name="venue" type="xs:string"/>
+						<xs:element name="website" type="xs:anyURI"/>
 					</xs:sequence>
 				</xs:extension>
 			</xs:complexContent>
 		</xs:complexType>
 	</xs:element>
-	
 	<!--
 	
 	Congratulations, this schema is now interoperable with GML parsers!
