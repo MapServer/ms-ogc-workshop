@@ -1,5 +1,5 @@
 
-$Id: HISTORY.txt,v 1.7 2006-09-01 02:14:05 tkralidi Exp $
+$Id: HISTORY.txt,v 1.8 2006-09-01 02:32:45 tkralidi Exp $
 
 MapServer OGC Web Services Workshop Revision History
 ====================================================
@@ -12,11 +12,17 @@ For a complete change history, please see the CVS log comments.
 CVS HEAD
 --------
 
-Version x.x.x (yyyy-mm-dd)
+Version x.y.z (yyyy-mm-dd)
+------------------------------
+
+- updated location of workshop URL in doc/ms_ogc_workshop.ppt
+
+Version 1.0.3 (2006-08-31)
 ------------------------------
 
 - changed schema pointers from schemas.opengeospatial.net to schemas.opengis.net
 - changed GML version from 3.0.0 to 3.1.1 in data/mums.xsd
+- prepared for move to maptools.org
 
 Version 1.0.2 (2006-08-06)
 ------------------------------
