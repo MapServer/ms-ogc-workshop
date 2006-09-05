@@ -1,6 +1,6 @@
 <?php
 //
-// $Id: OGC_WMC_mapfile2context.php,v 1.1 2005-12-29 19:06:35 tkralidi Exp $
+// $Id: OGC_WMC_mapfile2context.php,v 1.2 2006-09-05 18:06:17 yassefa Exp $
 //
 // load mapscript and DBase
 // check what OS this is running on
@@ -12,7 +12,7 @@ else {
 }
 
 if (!extension_loaded("MapScript")) {
-  dl("php_mapscript_46.$dlext");
+  dl("php_mapscript_4.10.0.$dlext");
 }
 
 // instantiate a new Map Object
