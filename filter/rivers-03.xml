@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!-- $Id: rivers-03.xml,v 1.1 2005-12-29 19:06:35 tkralidi Exp $ -->
-<Filter xmlns="http://www.opengis.net/ogc" xmlns:ogc="http://www.opengis.net/ogc" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/ogc http://schemas.opengeospatial.net/filter/1.0.0/filter.xsd">	<Not>
+<!-- $Id: rivers-03.xml,v 1.2 2006-10-05 19:20:48 tkralidi Exp $ -->
+<Filter xmlns="http://www.opengis.net/ogc" xmlns:ogc="http://www.opengis.net/ogc" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/ogc http://schemas.opengis.net/filter/1.0.0/filter.xsd">	<Not>
 		<PropertyIsEqualTo>
 			<PropertyName>NAME</PropertyName>
 			<Literal>Japura</Literal>
