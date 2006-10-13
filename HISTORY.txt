@@ -1,5 +1,5 @@
 
-$Id: HISTORY.txt,v 1.8 2006-09-01 02:32:45 tkralidi Exp $
+$Id: HISTORY.txt,v 1.9 2006-10-13 18:38:59 tkralidi Exp $
 
 MapServer OGC Web Services Workshop Revision History
 ====================================================
@@ -12,10 +12,15 @@ For a complete change history, please see the CVS log comments.
 CVS HEAD
 --------
 
-Version x.y.z (yyyy-mm-dd)
+Version 1.0.5 (2006-10-13)
 ------------------------------
 
 - updated location of workshop URL in doc/ms_ogc_workshop.ppt
+
+Version 1.0.4 (2006-09-08)
+------------------------------
+
+- updated for foss4g2006 conference
 
 Version 1.0.3 (2006-08-31)
 ------------------------------
