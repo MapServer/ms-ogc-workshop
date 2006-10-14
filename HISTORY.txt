@@ -1,5 +1,5 @@
 
-$Id: HISTORY.txt,v 1.9 2006-10-13 18:38:59 tkralidi Exp $
+$Id: HISTORY.txt,v 1.10 2006-10-14 22:28:37 tkralidi Exp $
 
 MapServer OGC Web Services Workshop Revision History
 ====================================================
@@ -12,10 +12,17 @@ For a complete change history, please see the CVS log comments.
 CVS HEAD
 --------
 
+Version x.x.x (yyyy-mm-dd)
+------------------------------
+- added "gml_include_items" "all" to service/config.map for raster GML query output
+
+
+
 Version 1.0.5 (2006-10-13)
 ------------------------------
 
 - updated location of workshop URL in doc/ms_ogc_workshop.ppt
+
 
 Version 1.0.4 (2006-09-08)
 ------------------------------
