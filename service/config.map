@@ -1,5 +1,5 @@
 #
-# $Id: config.map,v 1.3 2006-08-23 18:15:07 tkralidi Exp $
+# $Id: config.map,v 1.4 2006-10-14 22:28:17 tkralidi Exp $
 #
 # Start of map file
 #
@@ -392,6 +392,9 @@ MAP
 
    # OGC:WFS specific tags
    # None!  This is raster data, not covered by OGC:WFS
+
+"gml_include_items" "all"
+
   END
  END
 
