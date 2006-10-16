@@ -1,6 +1,6 @@
 <?php
 //
-// $Id: OGC_WMC_mapfile2context.php,v 1.2 2006-09-05 18:06:17 yassefa Exp $
+// $Id: OGC_WMC_mapfile2context.php,v 1.3 2006-10-16 15:01:23 tkralidi Exp $
 //
 // load mapscript and DBase
 // check what OS this is running on
@@ -52,7 +52,7 @@ $oMap->saveMapContext("ogc_wmc_output.cml");
 				<td>
 					<pre>
 // load mapscript
-dl("php_mapscript_46.dll");
+dl("php_mapscript_4.10.0.dll");
 
 // instantiate a new Map Object
 // with the mapfile as an argument
