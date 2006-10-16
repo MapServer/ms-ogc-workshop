@@ -1,5 +1,5 @@
 
-$Id: HISTORY.txt,v 1.10 2006-10-14 22:28:37 tkralidi Exp $
+$Id: HISTORY.txt,v 1.11 2006-10-16 15:03:19 tkralidi Exp $
 
 MapServer OGC Web Services Workshop Revision History
 ====================================================
@@ -15,7 +15,7 @@ CVS HEAD
 Version x.x.x (yyyy-mm-dd)
 ------------------------------
 - added "gml_include_items" "all" to service/config.map for raster GML query output
-
+- fixed all PHP docs to point to php_mapscript_4.10.0
 
 
 Version 1.0.5 (2006-10-13)
