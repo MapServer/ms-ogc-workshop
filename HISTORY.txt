@@ -1,5 +1,5 @@
 
-$Id: HISTORY.txt,v 1.12 2006-10-16 15:18:25 tkralidi Exp $
+$Id: HISTORY.txt,v 1.13 2007-03-08 01:36:32 tkralidi Exp $
 
 MapServer OGC Web Services Workshop Revision History
 ====================================================
@@ -11,6 +11,12 @@ For a complete change history, please see the CVS log comments.
 
 CVS HEAD
 --------
+
+Version x.y.z (yyyy-mm-dd)
+------------------------------
+- added website pointer to index.html
+- changed to php_mapscript.dll pointer in all PHP scripts
+
 
 Version 1.0.6 (2006-10-16)
 ------------------------------

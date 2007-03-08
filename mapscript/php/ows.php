@@ -1,6 +1,6 @@
 <?php
 
-dl("php_mapscript_4.10.0.dll");
+dl("php_mapscript.dll");
 $request = ms_newowsrequestobj();
 $request->loadparams();
  /*forcing the version from 1.1.1 to 1.1.0 */
