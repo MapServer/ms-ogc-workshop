@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<!-- $Id: mums.gml,v 1.4 2006-04-12 03:11:49 tkralidi Exp $ -->
+<!-- $Id: mums.gml,v 1.5 2007-08-13 21:23:29 tkralidi Exp $ -->
 <MapServerUserMeetings xmlns="http://localhost/ms_ogc_workshop" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://localhost/ms_ogc_workshop ./mums.xsd">
 	<gml:description>This is a GML document which provides locations of all MapServer User Meeting that have taken place</gml:description>
 	<gml:name>MapServer User Meetings</gml:name>
@@ -83,5 +83,39 @@
 			<website>http://www.foss4g2006.org/</website>
 		</Meeting>
 	</gml:featureMember>
-	<dateCreated>2006-04-11T14:46:39Z</dateCreated>
+	<gml:featureMember>
+		<Meeting>
+			<gml:description>This was where the fifth meeting was held</gml:description>
+			<gml:name>Victoria</gml:name>
+			<gml:location>
+				<gml:Point srsName="http://www.opengis.net/gml/srs/epsg.xml#4326">
+					<gml:coord>
+						<gml:X>-123.35</gml:X>
+						<gml:Y>48.4333333</gml:Y>
+					</gml:coord>
+				</gml:Point>
+			</gml:location>
+			<year>2006</year>
+			<venue>Victoria Conference Centre</venue>
+			<website>http://www.foss4g2007.org/</website>
+		</Meeting>
+	</gml:featureMember>
+	<gml:featureMember>
+		<Meeting>
+			<gml:description>This was where the sixth meeting was held</gml:description>
+			<gml:name>Cape Town</gml:name>
+			<gml:location>
+				<gml:Point srsName="http://www.opengis.net/gml/srs/epsg.xml#4326">
+					<gml:coord>
+						<gml:X>18.4166667</gml:X>
+						<gml:Y>-33.9166667</gml:Y>
+					</gml:coord>
+				</gml:Point>
+			</gml:location>
+			<year>2006</year>
+			<venue>Cape Town, South Africa</venue>
+			<website>http://www.foss4g2008.org/</website>
+		</Meeting>
+	</gml:featureMember>
+	<dateCreated>2007-08-13T17:17:32Z</dateCreated>
 </MapServerUserMeetings>
