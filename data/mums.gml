@@ -1,19 +1,12 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<!-- $Id: mums.gml,v 1.5 2007-08-13 21:23:29 tkralidi Exp $ -->
+<!-- $Id: mums.gml,v 1.6 2007-08-16 21:42:57 tkralidi Exp $ -->
 <MapServerUserMeetings xmlns="http://localhost/ms_ogc_workshop" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://localhost/ms_ogc_workshop ./mums.xsd">
 	<gml:description>This is a GML document which provides locations of all MapServer User Meeting that have taken place</gml:description>
 	<gml:name>MapServer User Meetings</gml:name>
 	<gml:boundedBy>
-		<gml:Box srsName="http://www.opengis.net/gml/srs/epsg.xml#4326">
-			<gml:coord>
-				<gml:X>-93.093055556</gml:X>
-				<gml:Y>44.944444444</gml:Y>
-			</gml:coord>
-			<gml:coord>
-				<gml:X>-75.7</gml:X>
-				<gml:Y>45.4166667</gml:Y>
-			</gml:coord>
-		</gml:Box>
+		<gml:Envelope>
+					<gml:coordinates>-93.093055556,44.944444444 -75.7,45.4166667</gml:coordinates>
+		</gml:Envelope>
 	</gml:boundedBy>
 	<gml:featureMember>
 		<Meeting>
