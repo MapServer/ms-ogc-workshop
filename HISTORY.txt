@@ -1,5 +1,5 @@
 
-$Id: HISTORY.txt,v 1.15 2007-08-07 18:20:26 tkralidi Exp $
+$Id: HISTORY.txt,v 1.16 2007-08-17 16:35:07 tkralidi Exp $
 
 MapServer OGC Web Services Workshop Revision History
 ====================================================
@@ -15,6 +15,9 @@ CVS HEAD
 Current version (CVS HEAD)
 - added website pointer to index.html
 - changed to php_mapscript.dll pointer in all PHP scripts
+- added GetLegendGraphic with SLD example and change to pointer to WxS mapscript PHP file
+- added data to data/mums.gml
+- updated client/webservices/gazetteer.php to geonames.org web service
 
 
 Version 1.0.6 (2006-10-16)

@@ -1,37 +1,19 @@
 <?php
 //
-// $Id: gazetteer.php,v 1.1 2005-12-29 19:06:35 tkralidi Exp $
+// $Id: gazetteer.php,v 1.2 2007-08-17 16:35:07 tkralidi Exp $
 //
-// CONFIG BEGIN
 
-// world gaz
-// request URL
-$sRequestURL       = "http://ogc.compusult.nf.ca/cgi-bin/OGC/gazetteers/wfs?version=1.0.0&request=GetFeature&typename=GazetteerEntry&filter=<Filter><PropertyIsLike><PropertyName>name</PropertyName><Literal>" . $_GET["placename"] . "</Literal></PropertyIsLike></Filter>";
-$coordsElementName = "COORDINATES"; // coordinates element name
-$nameElementName   = "DESCRIPTION"; // placename element name
-
-// CGNS
-//$sRequestURL       = "http://cgns.nrcan.gc.ca/wfs/cubeserv.cgi?datastore=cgns&version=1.0.0&service=WFS&request=GetFeature&typename=GEONAMES&filter=<Filter><PropertyIsLike><PropertyName>GEONAME</PropertyName><Literal>" . $_GET["placename"] . "</Literal></PropertyIsLike></Filter>";
-//$coordsElementName = "GML:COORDINATES";
-//$nameElementName   = "GEONAMES.LOCATION";
-
-
-// CONFIG END
-// you should be okay from here
-
+$sRequestURL = "http://ws.geonames.org/search?name=" . $_GET["placename"] ;
 
 // the first time this window is opened (i.e. action=init), it should not query the gazetteer
 // if the "action" keyword is not in the GET call, and placename is then go ahead
 if (! $_GET["action"] && $_GET["placename"]) {
 
-	// setup the request URL
-	// parse the XML response
-	$p = xml_parser_create();
-	xml_parse_into_struct( $p, file_get_contents( $sRequestURL ), $vals, $index );
-	xml_parser_free( $p );
+	// instatiate xml object from remote URL
+        $geonames = new SimpleXMLElement(file_get_contents($sRequestURL)); 
 
 	// count the number of results
-	$gazNumRecs = count( $index["$coordsElementName"] ) - 1 ;
+	$gazNumRecs = $geonames->totalResultsCount;
 }
 
 ?>
@@ -93,8 +75,8 @@ if (! $_GET["action"] && $_GET["placename"]) {
 			// don't do error checking yet
 			if (! $_GET["action"]) {
 				// do some error checking
-				if ($vals[$index['SERVICEEXCEPTION'][0]]['value']) {
-					$sExceptionMessage = $vals[$index['SERVICEEXCEPTION'][0]]['value'];
+				if ($geonames->status) {
+					$sExceptionMessage = $geonames->status['message'];
 		?>
 
 		<center>No results: <?php echo $sExceptionMessage ?></center>
@@ -125,18 +107,14 @@ if (! $_GET["action"] && $_GET["placename"]) {
 					<td>
 						<select name="gazEntries" onchange="javascript:setXY();" size="5">
 <?
-$i = 0;
-$j = 1;
 
-while( $i < $gazNumRecs) {
-	// split the GML coordinates into individual values
-	list($y, $x) = split(',', $vals[$index["$coordsElementName"][$j]]['value']);
-	//list($x, $y) = split(',', $vals[$index["$coordsElementName"][$j]]['value']);
-	$pname = $vals[$index["$nameElementName"][$i]]['value'];
-	echo "							<option value=\"$x,$y\">$pname</option>\n";
-	$i++;
-	$j++;
+foreach ($geonames->geoname as $geoname) {
+	$placename = $geoname->name . ", (" . $geoname->countryName . ")";
+	$x = $geoname->lng;
+	$y = $geoname->lat;
+	echo "							<option value=\"$x,$y\">$placename</option>\n";
 }
+
 ?>
 						</select>
 					</td>
