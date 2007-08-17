@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<!-- $Id: index.html,v 1.10 2007-01-09 15:02:49 tkralidi Exp $ -->
+<!-- $Id: index.html,v 1.11 2007-08-17 15:58:15 tkralidi Exp $ -->
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
@@ -77,6 +77,7 @@
 			<li><a title="Publishing as OGC:WMS (GetMap) with remote styling (OGC:SLD) and filtering (OGC:Filter) to highlight features" href="/cgi-bin/mapserv.exe?map=/ms4w/apps/ms_ogc_workshop/service/config.map&amp;version=1.1.1&amp;service=WMS&amp;request=GetMap&amp;srs=EPSG:4326&amp;bbox=-180,-90,180,90&amp;format=image/png&amp;layers=land_shallow_topo_2048,rivers&amp;styles=,&amp;transparent=true&amp;width=500&amp;height=300&amp;sld=http://127.0.0.1/ms_ogc_workshop/sld/rivers-hilite.sld">Publishing as OGC:WMS (GetMap) with remote styling (OGC:SLD) and filtering (OGC:Filter) to highlight features</a> -- SLD document <a title="SLD document here" href="sld/rivers-hilite.sld">here</a> -- mapfile <a title="mapfile here" href="service/config.map">here</a></li>
 			<li><a title="Publishing as OGC:WMS (GetMap) with remote styling (OGC:SLD) and filtering (OGC:Filter) to classify raster imagery" href="/cgi-bin/mapserv.exe?map=/ms4w/apps/ms_ogc_workshop/service/config.map&amp;version=1.1.1&amp;service=WMS&amp;request=GetMap&amp;srs=EPSG:4326&amp;bbox=-180,-90,180,90&amp;format=image/png&amp;layers=land_shallow_topo_2048,rivers&amp;styles=,&amp;transparent=true&amp;width=500&amp;height=300&amp;sld=http://127.0.0.1/ms_ogc_workshop/sld/land_shallow_topo_2048.sld">Publishing as OGC:WMS (GetMap) with remote styling (OGC:SLD) to classify imagery</a> -- SLD document <a title="SLD document here" href="sld/land_shallow_topo_2048.sld">here</a> -- mapfile <a title="mapfile here" href="service/config.map">here</a></li>
 			<li><a title="Publishing as OGC:WMS (GetLegendGraphic)" href="/cgi-bin/mapserv.exe?map=/ms4w/apps/ms_ogc_workshop/service/config.map&amp;version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=rivers&amp;format=image/png">Publishing as OGC:WMS (GetLegendGraphic)</a> -- mapfile <a title="mapfile here" href="service/config.map">here</a></li>
+			<li><a title="Publishing as OGC:WMS (GetLegendGraphic) with remote styling (OGC:SLD)" href="/cgi-bin/mapserv.exe?map=/ms4w/apps/ms_ogc_workshop/service/config.map&amp;version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=rivers&amp;format=image/png&amp;sld=http://127.0.0.1/ms_ogc_workshop/sld/rivers.sld">Publishing as OGC:WMS (GetLegendGraphic) with remote styling (OGC:SLD)</a> -- mapfile <a title="mapfile here" href="service/config.map">here</a></li>
 			<li><a title="Publishing as OGC:SLD with OGC:WMS (GetStyles) to convert MapServer classes to SLD documents" href="/cgi-bin/mapserv.exe?map=/ms4w/apps/ms_ogc_workshop/sld/demo.map&amp;version=1.1.1&amp;service=WMS&amp;request=GetStyles&amp;layers=rivers">Publishing as OGC:SLD with OGC:WMS (GetStyles) to convert MapServer classes to SLD documents</a> -- mapfile <a title="mapfile here" href="service/config.map">here</a></li>
 		</ul>
 
@@ -155,7 +156,7 @@
 		<ul>
 			<li><a title="Perl Example" href="mapscript/perl/ows.pl">Perl Example</a></li>
 			<li><a title="Python Example" href="mapscript/python/ows.py">Python Example</a></li>
-			<li><a title="PHP Example" href="mapscript/php/ows_php.txt">PHP Example</a></li>
+			<li><a title="PHP Example" href="mapscript/php/ows.php.txt">PHP Example</a></li>
 		</ul>
 
 		<hr/>
