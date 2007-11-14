@@ -1,5 +1,5 @@
 
-$Id: HISTORY.txt,v 1.17 2007-08-24 17:16:04 tkralidi Exp $
+$Id: HISTORY.txt,v 1.18 2007-11-14 15:54:40 tkralidi Exp $
 
 MapServer OGC Web Services Workshop Revision History
 ====================================================
@@ -8,9 +8,13 @@ This is a human-readable revision history which will attempt to document require
 
 For a complete change history, please see the CVS log comments.
 
-
 Current version (CVS HEAD)
 ------------------------------
+
+
+Version 1.0.8 (2007-11-14)
+------------------------------
+- changed various demo_init.html files to adjust to rfc31
 
 
 Version 1.0.7 (2007-08-24)
