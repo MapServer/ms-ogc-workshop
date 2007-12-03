@@ -1,5 +1,5 @@
 
-$Id: HISTORY.txt,v 1.18 2007-11-14 15:54:40 tkralidi Exp $
+$Id: HISTORY.txt,v 1.19 2007-12-03 15:45:31 tkralidi Exp $
 
 MapServer OGC Web Services Workshop Revision History
 ====================================================
@@ -10,7 +10,7 @@ For a complete change history, please see the CVS log comments.
 
 Current version (CVS HEAD)
 ------------------------------
-
+- added foss4g2007 evaluations to doc/
 
 Version 1.0.8 (2007-11-14)
 ------------------------------
