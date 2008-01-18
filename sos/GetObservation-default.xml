@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sos:GetObservation version="1.0.0" service="SOS" xmlns="http://www.opengis.net/sos/1.0" xmlns:sos="http://www.opengis.net/sos/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/sos/1.0 http://schemas.opengis.net/sos/1.0.0/sosGetObservation.xsd">
+	<sos:offering>Water</sos:offering>
+	<sos:observedProperty>WaterQuality</sos:observedProperty>
+	<sos:responseFormat>text/xml; subtype=om/1.0.0</sos:responseFormat>
+</sos:GetObservation>
+			

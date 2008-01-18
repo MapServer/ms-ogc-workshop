@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sos:GetCapabilities xmlns:ows="http://www.opengis.net/ows" xmlns:sos="http://www.opengis.net/sos/1.0" xmlns="http://www.opengis.net/sos/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/sos/1.0 http://schemas.opengis.net/sos/1.0.0/sosGetCapabilities.xsd" service="SOS" updateSequence="12345">
+  <ows:AcceptVersions>
+   <ows:Version>1.0.0</ows:Version>
+  </ows:AcceptVersions>
+</sos:GetCapabilities>
