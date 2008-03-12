@@ -1,22 +1,40 @@
-$Id: OSGeo4W.txt,v 1.1 2008-03-12 22:29:07 yassefa Exp $
+$Id: OSGeo4W.txt,v 1.2 2008-03-12 23:17:36 yassefa Exp $
 
 
 PACAKAGING FOR OSGEO4W
 ---------------------
 
  1- the final package have the following directory structure:
-
+   
+   apache
+     ---- htdocs
+       ---------- ms_ogc_workshop.pkg.html
    apps
      ---- ms_ogc_workshop
-   ini
-   posinstall
+   
+   etc
+    ------ ini
+      --------- ms_ogc_workshop.bat  
+    ------ posinstall
+       -------- ms_ogc_workshop.bat
+
+   httpd.d
+     ------- httpd_ms_ogc_workshop.conf
+
+ * apache folder is for ms_ogc_workshop.pkg.html
 
  * apps folder
     - contains a sub folder called ms_ogc_workshop and this sub folder conatins
       all the files of workshop (as you would get it from cvs)
 
- * the ini and postinstall folders contain a file called ms_ogc_workshop.bat. This file is
+ * etc foder (with the ini and postinstall folders) contain a file called ms_ogc_workshop.bat. This file is
    included in cvs in the workshop. The ms_ogc_workshop.bat is run after the installion is done.
+   Note sure at this point if both sub filders are needed or just one of them.
+
+ * httpd.d folder is for httpd_ms_ogc_workshop.conf
+
+  These folders will be extracted into the root directory of the osgeo4w installtion. Example
+  c:\OSGeo4W\apps\ms_ogc_workshop ...
 
 
  2- Naming of the package
@@ -38,3 +56,6 @@ PACAKAGING FOR OSGEO4W
  There is a test site at http://dl.maptools.org/dl/osgeo4w/release/ms_ogc_workshop/
  
 
+ Misc
+
+  $ tar -cvjf ms_ogc_workshop-1.0.9.tar.bz2  apps/ms_ogc_workshop etc/ini/ms_ogc_workshop.bat  etc/postinstall/ms_ogc_workshop.bat apache/htdocs/ms_ogc_workshop.pkg.html httpd.d/httpd_ms_ogc_workshop.conf
