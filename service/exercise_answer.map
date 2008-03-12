@@ -1,5 +1,5 @@
 #
-# $Id: exercise_answer.map,v 1.2 2006-08-23 18:15:07 tkralidi Exp $
+# $Id: exercise_answer.map,v 1.3 2008-03-12 21:37:36 yassefa Exp $
 #
 # Start of map file
 #
@@ -15,15 +15,15 @@
 #
 # For OGC:WMS:
 #
-# http://localhost/cgi-bin/mapserv.exe?map=/ms4w/apps/ms_ogc_workshop/service/config.map&version=1.1.1&service=WMS&request=GetCapabilities
+# http://localhost/cgi-bin/mapserv.exe?map=@osgeo4w@/apps/ms_ogc_workshop/service/config.map&version=1.1.1&service=WMS&request=GetCapabilities
 #
 # For OGC:WFS:
 #
-# http://localhost/cgi-bin/mapserv.exe?map=/ms4w/apps/ms_ogc_workshop/service/config.map&version=1.0.0&service=WFS&request=GetCapabilities
+# http://localhost/cgi-bin/mapserv.exe?map=@osgeo4w@/apps/ms_ogc_workshop/service/config.map&version=1.0.0&service=WFS&request=GetCapabilities
 #
 # For OGC:WCS:
 #
-# http://localhost/cgi-bin/mapserv.exe?map=/ms4w/apps/ms_ogc_workshop/service/config.map&version=1.0.0&service=WCS&request=GetCapabilities
+# http://localhost/cgi-bin/mapserv.exe?map=@osgeo4w@/apps/ms_ogc_workshop/service/config.map&version=1.0.0&service=WCS&request=GetCapabilities
 #
 
 MAP
@@ -78,7 +78,7 @@ MAP
  WEB
 
   # this is the real filepath to the temp dir for intermediate file creation
-  IMAGEPATH "/ms4w/tmp/ms_tmp/"
+  IMAGEPATH "@osgeo4w@/tmp/ms_tmp/"
 
   # this is the web-accessible path to IMAGEPATH
   IMAGEURL "/ms_tmp/"
@@ -88,7 +88,7 @@ MAP
 
   METADATA
 
-   "map" "/ms4w/apps/ms_ogc_workshop/service/config.map"
+   "map" "@osgeo4w@/apps/ms_ogc_workshop/service/config.map"
    
    # generic OWS specific info
    # sets base URL for OGC Schemas so the root element in the
@@ -145,7 +145,7 @@ MAP
    # /WCS_Capabilities/Capability/Request/DescribeFeatureType/DCPType/HTTP/Post/OnlineResource/@xlink:href
    # /WCS_Capabilities/Capability/Request/GetFeature/DCPType/HTTP/Get/OnlineResource/@xlink:href
    # /WCS_Capabilities/Capability/Request/GetFeature/DCPType/HTTP/Post/OnlineResource/@xlink:href
-   "ows_onlineresource" "http://localhost/cgi-bin/mapserv.exe?map=/ms4w/apps/ms_ogc_workshop/service/config.map"
+   "ows_onlineresource" "http://localhost/cgi-bin/mapserv.exe?map=@osgeo4w@/apps/ms_ogc_workshop/service/config.map"
 
    # sets:
    # /WMT_MS_Capabilities/Service/Fees

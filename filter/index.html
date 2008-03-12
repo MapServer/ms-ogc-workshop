@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-loose.dtd">
-<!-- $Id: index.html,v 1.1 2005-12-29 19:06:35 tkralidi Exp $ -->
+<!-- $Id: index.html,v 1.2 2008-03-12 21:37:35 yassefa Exp $ -->
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -14,17 +14,17 @@
 		<h3>Fun with Filters</h3>
 		<hr/>
 		<p>
-			Let's try running some filters against our OGC:WFS at http://127.0.0.1/cgi-bin/mapserv.exe?map=/ms4w/apps/ms_ogc_workshop/service/config.map
+			Let's try running some filters against our OGC:WFS at http://127.0.0.1/cgi-bin/mapserv.exe?map=@osgeo4w@/apps/ms_ogc_workshop/service/config.map
 		</p>
 		<p>
-			Before running filters, we can find out the 'schema' of the feature type, with <a title="http://127.0.0.1/cgi-bin/mapserv.exe?map=/ms4w/apps/ms_ogc_workshop/service/config.map&amp;version=1.0.0&amp;service=WFS&amp;request=DescribeFeatureType&amp;typename=rivers" href="http://127.0.0.1/cgi-bin/mapserv.exe?map=/ms4w/apps/ms_ogc_workshop/service/config.map&amp;version=1.0.0&amp;service=WFS&amp;request=DescribeFeatureType&amp;typename=rivers">http://127.0.0.1/cgi-bin/mapserv.exe?map=/ms4w/apps/ms_ogc_workshop/service/config.map&amp;version=1.0.0&amp;service=WFS&amp;request=DescribeFeatureType&amp;typename=rivers</a>
+			Before running filters, we can find out the 'schema' of the feature type, with <a title="http://127.0.0.1/cgi-bin/mapserv.exe?map=@osgeo4w@/apps/ms_ogc_workshop/service/config.map&amp;version=1.0.0&amp;service=WFS&amp;request=DescribeFeatureType&amp;typename=rivers" href="http://127.0.0.1/cgi-bin/mapserv.exe?map=@osgeo4w@/apps/ms_ogc_workshop/service/config.map&amp;version=1.0.0&amp;service=WFS&amp;request=DescribeFeatureType&amp;typename=rivers">http://127.0.0.1/cgi-bin/mapserv.exe?map=@osgeo4w@/apps/ms_ogc_workshop/service/config.map&amp;version=1.0.0&amp;service=WFS&amp;request=DescribeFeatureType&amp;typename=rivers</a>
 		</p>
 		<p>
 			Here's an example which equates to 'NAME="Great Bear"'
 		</p>
 		<iframe width="500" height="300" src="rivers-00.xml"></iframe>
 		<p>
-			<a title="Try it" href="/cgi-bin/mapserv.exe?map=/ms4w/apps/ms_ogc_workshop/service/config.map&amp;version=1.0.0&amp;service=WFS&amp;request=GetFeature&amp;typename=rivers&amp;filter=&lt;Filter&gt;&lt;PropertyIsEqualTo&gt;&lt;PropertyName&gt;NAME&lt;/PropertyName&gt;&lt;Literal&gt;Great Bear&lt;/Literal&gt;&lt;/PropertyIsEqualTo&gt;&lt;/Filter&gt;">Try it</a>
+			<a title="Try it" href="/cgi-bin/mapserv.exe?map=@osgeo4w@/apps/ms_ogc_workshop/service/config.map&amp;version=1.0.0&amp;service=WFS&amp;request=GetFeature&amp;typename=rivers&amp;filter=&lt;Filter&gt;&lt;PropertyIsEqualTo&gt;&lt;PropertyName&gt;NAME&lt;/PropertyName&gt;&lt;Literal&gt;Great Bear&lt;/Literal&gt;&lt;/PropertyIsEqualTo&gt;&lt;/Filter&gt;">Try it</a>
 		</p>
 		<hr/>
 		<p>
@@ -32,7 +32,7 @@
 		</p>
 		<iframe width="500" height="400" src="rivers-01.xml"></iframe>
 		<p>
-			<a title="Try it" href="/cgi-bin/mapserv.exe?map=/ms4w/apps/ms_ogc_workshop/service/config.map&amp;version=1.0.0&amp;service=WFS&amp;request=GetFeature&amp;typename=rivers&amp;filter=&lt;Filter&gt;&lt;And&gt;&lt;PropertyIsEqualTo&gt;&lt;PropertyName&gt;NAME&lt;/PropertyName&gt;&lt;Literal&gt;Japura&lt;/Literal&gt;&lt;/PropertyIsEqualTo&gt;&lt;PropertyIsEqualTo&gt;&lt;PropertyName&gt;SYSTEM&lt;/PropertyName&gt;&lt;Literal&gt;Amazon&lt;/Literal&gt;&lt;/PropertyIsEqualTo&gt;&lt;/And&gt;&lt;/Filter&gt;">Try it</a>
+			<a title="Try it" href="/cgi-bin/mapserv.exe?map=@osgeo4w@/apps/ms_ogc_workshop/service/config.map&amp;version=1.0.0&amp;service=WFS&amp;request=GetFeature&amp;typename=rivers&amp;filter=&lt;Filter&gt;&lt;And&gt;&lt;PropertyIsEqualTo&gt;&lt;PropertyName&gt;NAME&lt;/PropertyName&gt;&lt;Literal&gt;Japura&lt;/Literal&gt;&lt;/PropertyIsEqualTo&gt;&lt;PropertyIsEqualTo&gt;&lt;PropertyName&gt;SYSTEM&lt;/PropertyName&gt;&lt;Literal&gt;Amazon&lt;/Literal&gt;&lt;/PropertyIsEqualTo&gt;&lt;/And&gt;&lt;/Filter&gt;">Try it</a>
 		</p>
 		<hr/>
 		<p>
@@ -40,7 +40,7 @@
 		</p>
 		<iframe width="500" height="400" src="rivers-02.xml"></iframe>
 		<p>
-			<a title="Try it" href="/cgi-bin/mapserv.exe?map=/ms4w/apps/ms_ogc_workshop/service/config.map&amp;version=1.0.0&amp;service=WFS&amp;request=GetFeature&amp;typename=rivers&amp;filter=&lt;Filter&gt;&lt;Or&gt;&lt;PropertyIsEqualTo&gt;&lt;PropertyName&gt;NAME&lt;/PropertyName&gt;&lt;Literal&gt;Japura&lt;/Literal&gt;&lt;/PropertyIsEqualTo&gt;&lt;PropertyIsEqualTo&gt;&lt;PropertyName&gt;NAME&lt;/PropertyName&gt;&lt;Literal&gt;Niger&lt;/Literal&gt;&lt;/PropertyIsEqualTo&gt;&lt;/Or&gt;&lt;/Filter&gt;">Try it</a>
+			<a title="Try it" href="/cgi-bin/mapserv.exe?map=@osgeo4w@/apps/ms_ogc_workshop/service/config.map&amp;version=1.0.0&amp;service=WFS&amp;request=GetFeature&amp;typename=rivers&amp;filter=&lt;Filter&gt;&lt;Or&gt;&lt;PropertyIsEqualTo&gt;&lt;PropertyName&gt;NAME&lt;/PropertyName&gt;&lt;Literal&gt;Japura&lt;/Literal&gt;&lt;/PropertyIsEqualTo&gt;&lt;PropertyIsEqualTo&gt;&lt;PropertyName&gt;NAME&lt;/PropertyName&gt;&lt;Literal&gt;Niger&lt;/Literal&gt;&lt;/PropertyIsEqualTo&gt;&lt;/Or&gt;&lt;/Filter&gt;">Try it</a>
 		</p>
 		<hr/>
 		<p>
@@ -48,7 +48,7 @@
 		</p>
 		<iframe width="500" height="400" src="rivers-03.xml"></iframe>
 		<p>
-			<a title="Try it" href="/cgi-bin/mapserv.exe?map=/ms4w/apps/ms_ogc_workshop/service/config.map&amp;version=1.0.0&amp;service=WFS&amp;request=GetFeature&amp;typename=rivers&amp;filter=&lt;Filter&gt;&lt;Not&gt;&lt;PropertyIsEqualTo&gt;&lt;PropertyName&gt;NAME&lt;/PropertyName&gt;&lt;Literal&gt;Japura&lt;/Literal&gt;&lt;/PropertyIsEqualTo&gt;&lt;/Not&gt;&lt;/Filter&gt;">Try it</a>
+			<a title="Try it" href="/cgi-bin/mapserv.exe?map=@osgeo4w@/apps/ms_ogc_workshop/service/config.map&amp;version=1.0.0&amp;service=WFS&amp;request=GetFeature&amp;typename=rivers&amp;filter=&lt;Filter&gt;&lt;Not&gt;&lt;PropertyIsEqualTo&gt;&lt;PropertyName&gt;NAME&lt;/PropertyName&gt;&lt;Literal&gt;Japura&lt;/Literal&gt;&lt;/PropertyIsEqualTo&gt;&lt;/Not&gt;&lt;/Filter&gt;">Try it</a>
 		</p>
 		<hr/>
 		<p>

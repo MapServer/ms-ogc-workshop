@@ -1,5 +1,5 @@
 #
-# $Id: demo.map,v 1.3 2006-08-23 18:15:07 tkralidi Exp $
+# $Id: demo.map,v 1.4 2008-03-12 21:37:35 yassefa Exp $
 #
 # Start of map file
 #
@@ -48,7 +48,7 @@ MAP
   TEMPLATE demo.html
 
   # this is set in the form which initializes the page, but can be set here if you want
-  IMAGEPATH "/ms4w/tmp/ms_tmp/"
+  INCLUDE "../common/imagepath.inc"
 
   # this is set in the form which initializes the page, but can be set here if you want
   IMAGEURL "/ms_tmp/"
@@ -124,7 +124,7 @@ MAP
 
    # if this value is set to 1, you can convert a mapfile to
    # an OGC:WMC via URL, with:
-   # http://localhost/cgi-bin/mapserv.exe?map=/ms4w/apps/ms_ogc_workshop/context/demo.map&request=GetContext
+   # http://localhost/cgi-bin/mapserv.exe?map=/osgeo4w/apps/ms_ogc_workshop/context/demo.map&request=GetContext
    # Remember, an OGC:WMC (just like any other XML) does NOT
    # have to be a static document
    "wms_getcontext_enabled" "1"

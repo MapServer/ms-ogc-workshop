@@ -1,5 +1,5 @@
 #
-# $Id: demo.map,v 1.4 2006-09-01 03:21:08 yassefa Exp $
+# $Id: demo.map,v 1.5 2008-03-12 21:37:35 yassefa Exp $
 #
 # Start of map file
 #
@@ -50,7 +50,8 @@ MAP
   FOOTER   "../../templates/query_footer.html"
   
   # this is set in the form which initializes the page, but can be set here if you want
-  IMAGEPATH "/ms4w/tmp/ms_tmp/"
+  INCLUDE "../../common/imagepath.inc"
+	
 
   # this is set in the form which initializes the page, but can be set here if you want
   IMAGEURL "/ms_tmp/"
@@ -218,7 +219,7 @@ MAP
   
   # actual data pointer to GML document
   #CONNECTION "../../data/mums.gml"
-  CONNECTION "c:/ms4w/apps/ms_ogc_workshop/data/mums.gml"
+  CONNECTION "@osgeo4w@/apps/ms_ogc_workshop/data/mums.gml"
 
   CLASSITEM "year"
   # how will this data look?
