@@ -1,6 +1,4 @@
-textreplace -sf apps/ms_ogc_workshop/httpd_ms_ogc_workshop.conf -df httpd.d/httpd_ms_ogc_workshop.conf -map @osgeo4w@ "%OSGEO4W_ROOT%" 
-copy  apps\ms_ogc_workshop\ms_ogc_workshop.pkg.html apache\htdocs\ms_ogc_workshop.pkg.html
-
+textreplace -sf httpd.d/httpd_ms_ogc_workshop.conf -df httpd.d/httpd_ms_ogc_workshop.conf -map @osgeo4w@ "%OSGEO4W_ROOT%" 
 
 textreplace -sf apps/ms_ogc_workshop/client\gml\demo.map -df apps/ms_ogc_workshop/client\gml\demo.map  -map @osgeo4w@ "%OSGEO4W_ROOT%"
 textreplace -sf apps/ms_ogc_workshop/service\config.map -df apps/ms_ogc_workshop/service\config.map -map @osgeo4w@ "%OSGEO4W_ROOT%"
