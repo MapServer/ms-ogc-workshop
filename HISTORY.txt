@@ -1,5 +1,5 @@
 
-$Id: HISTORY.txt,v 1.20 2008-01-18 17:56:36 tkralidi Exp $
+$Id: HISTORY.txt,v 1.21 2008-03-17 14:02:50 yassefa Exp $
 
 MapServer OGC Web Services Workshop Revision History
 ====================================================
@@ -8,8 +8,9 @@ This is a human-readable revision history which will attempt to document require
 
 For a complete change history, please see the CVS log comments.
 
-Current version (CVS HEAD)
+Version 1.0.9 (2008-03-17)
 ------------------------------
+- few modification to prepare the worksop for osgeo4w installation
 - added foss4g2007 evaluations to doc/
 - added initial SOS examples in ./sos/ and ./data/obs
 
