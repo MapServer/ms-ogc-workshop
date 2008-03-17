@@ -1,5 +1,5 @@
 
-$Id: README.txt,v 1.1 2005-12-29 19:06:35 tkralidi Exp $
+$Id: README.txt,v 1.2 2008-03-17 13:55:02 yassefa Exp $
 
 MapServer and OGC Web Services Workshop
 =======================================
@@ -38,8 +38,8 @@ You should then be able to open up the project homepage, at:
 http://127.0.0.1/ms_ogc_workshop/index.html
 
 
-INSTALLATION -- WINDOWS
------------------------
+INSTALLATION -- WINDOWS MS4W
+----------------------------
 
 1./
 
@@ -97,6 +97,22 @@ http://www.geoconnections.org/publications/training_manual/e/ (EN)
 http://www.geoconnections.org/publications/training_manual/f/index.htm (FR)
 
 If you have any questions or comments, feel free to contact me.
+
+
+INSTALLATION -- WINDOWS OSGEO4W
+-------------------------------
+
+1./
+
+Starting from version 1.0.9, the workshop is available through the osgeo4w installer
+(http://wiki.osgeo.org/wiki/OSGeo4W)
+
+Steps are:
+ 
+  - download/install the http://download.osgeo.org/osgeo4w/osgeo4w-setup.exe 
+  - select the the OGC Workshop when installing (It is part of the Web_Applications 
+    category)
+  
 
 WORKSHOP CONTENT
 ================
