@@ -1,5 +1,5 @@
 
-$Id: servers.txt,v 1.1 2005-12-29 19:06:35 tkralidi Exp $
+$Id: servers.txt,v 1.2 2008-09-10 11:51:18 tkralidi Exp $
 
 ENVISAT MERIS mosaic
 
@@ -10,3 +10,15 @@ MODIS mosaic
 
 Server: http://mapserv2.esrin.esa.it/cubestor/cubeserv/cubeserv.cgi
 Layer name: WORLD_MODIS_1KM:MapAdmin
+
+FAO World Soil Resources
+
+Server: http://geonetwork3.fao.org/cgi-bin/wms?map=/GeoNetwork_data/01100-01199/1111/wms/1111.map
+Layer name: world_soil_resources
+
+Metacarta VMAP0 demo
+
+Server: http://labs.metacarta.com/wms/vmap0
+Layer name: basic
+
+
