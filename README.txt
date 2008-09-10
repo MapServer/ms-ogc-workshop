@@ -1,5 +1,5 @@
 
-$Id: README.txt,v 1.2 2008-03-17 13:55:02 yassefa Exp $
+$Id: README.txt,v 1.3 2008-09-10 19:38:14 yassefa Exp $
 
 MapServer and OGC Web Services Workshop
 =======================================
@@ -19,10 +19,10 @@ INSTALLATION -- UNIX
 
 1./
 
-- download this zipfile (latest is always at: http://devgeo.cciw.ca/ms_ogc_workshop/index.html)
-- unzip http://devgeo.cciw.ca/ms_ogc_workshop/ms_ogc_workshop.zip into the root of your file structure, i.e.:
+- download this zipfile (latest is always at: http://www.maptools.org/ms4w/index.phtml?page=downloads.html)
+- unzip package into the root of your file structure, i.e.:
 
-$ lwp-download http://devgeo.cciw.ca/ms_ogc_workshop/ms_ogc_workshop.zip /tmp/ms_ogc_workshop.zip
+$ lwp-download http://dl.maptools.org/dl/ms-ogc-workshop/ms_ogc_workshop-10.10.zip /tmp/ms_ogc_workshop.zip
 $ unzip /tmp/ms_ogc_workshop.zip
 
 The above package will unzip into install into the /ms4w directory structure.
@@ -48,19 +48,15 @@ You will require the MapServer for Windows (MS4W) package.  The downloads page i
 http://www.maptools.org/ms4w/index.phtml?page=downloads.html
 
 a./
-- download the ms4w 1.2 zipfile: http://www.maptools.org/dl/ms4w/ms4w_1.2.zip
-- unzip http://devgeo.cciw.ca/ms_ogc_workshop/ms_ogc_workshop.zip into the root of your drive (e.g. C:\)
- - make sure "Use Folder Names" is checked
+- download/install the latest ms4w package.
 
 The above package will install MapServer software, as well as an instance of the Apache Web Server.  At this point, you can run C:\ms4w\Apache\bin\Apache.exe, which will start the web server, and point your web browser to http://127.0.0.1/, and you will see the ms4w homepage with some links.
 
 b./
-- download this zipfile (latest is always at: http://devgeo.cciw.ca/ms_ogc_workshop/index.html)
-  - http://devgeo.cciw.ca/ms_ogc_workshop/ms_ogc_workshop.zip
-- unzip into the root of your drive (e.g. C:\)
- - make sure "Use Folder Names" is checked
+- download the MapServer OGC Web Services Workshop this zip file form http://www.maptools.org/ms4w/index.phtml?page=downloads.html
+- Extract the packages below to the root of the drive where your MS4W is installed on (e.g. C:\ )
+- make sure "Use Folder Names" is checked
 
-The above package will install into the /ms4w directory structure.
 
 c./
 - Start the Apache web server by double clicking \ms4w\Apache\bin\Apache.exe

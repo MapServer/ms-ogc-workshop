@@ -1,4 +1,4 @@
-$Id: OSGeo4W.txt,v 1.5 2008-09-10 19:38:14 yassefa Exp $
+This is intended dor those preparing an MS4W and OSGEO4W packages 
 
 
 PACKAGING FOR OSGEO4W
@@ -50,8 +50,50 @@ PACKAGING FOR OSGEO4W
  4- Where to upload the package
 
  The main site is http://download.osgeo.org/osgeo4w/release/ms_ogc_workshop/ 
+
+ Please also check http://trac.osgeo.org/osgeo4w/ for details on OSGeo4W 
  
 
  Misc
 
   $ tar -cvjf ms_ogc_workshop-1.0.9.tar.bz2  apps/ms_ogc_workshop etc/postinstall/ms_ogc_workshop.bat apache/htdocs/ms_ogc_workshop.pkg.html httpd.d/httpd_ms_ogc_workshop.conf
+
+
+
+PACKAGING FOR MS4W
+-------------------
+
+
+ 1- the final package (.zip) have the following directory structure:
+   
+   apache
+     ---- htdocs
+       ---------- ms_ogc_workshop.pkg.html
+   apps
+     ---- ms_ogc_workshop
+   
+   httpd.d
+     ------- httpd_ms_ogc_workshop.conf
+
+ * apache folder is for ms_ogc_workshop.pkg.html
+
+ * apps folder
+    - contains a sub folder called ms_ogc_workshop and this sub folder contains
+      all the files of workshop (as you would get it from cvs)
+
+ * httpd.d folder is for httpd_ms_ogc_workshop.conf
+
+  These folders will be extracted into the root directory where ms4w is installed. 
+
+
+2 - Converting files from CVS version to ms4w ready files
+
+    Several files extracted directly from CVS contain @osgeo4w@ tags instead of the disk paths such as /ms4w.
+    (The reason for that is that these tags are used during the OSGEO4W installation  and replace by the
+    appropriate path where OSGEO4W is installed.)
+  
+    For an ms4w package, we also need to replace those tags with /ms4w. Steps to do that are:
+
+      - get the   ms_ogc_workshop from CVS
+      - get the textrepalce.exe binary from http://download.osgeo.org/osgeo4w/release/msvcrt/
+      - run the ms_ogc_workshop_ms4w.bat           
