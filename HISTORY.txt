@@ -1,5 +1,5 @@
 
-$Id: HISTORY.txt,v 1.25 2008-09-10 13:52:20 tkralidi Exp $
+$Id: HISTORY.txt,v 1.26 2008-09-10 13:57:01 tkralidi Exp $
 
 MapServer OGC Web Services Workshop Revision History
 ====================================================
@@ -8,8 +8,12 @@ This is a human-readable revision history which will attempt to document require
 
 For a complete change history, please see the CVS log comments.
 
+Current Version (trunk):
+----------------------------
+
+
 Version 1.0.10 (2008-09-10):
--------------------------
+----------------------------
 
 - Add BBOX element to the GetCoverage  call in the main index.html
 - Add ./sos/util/proxy.php to handle AJAX-y requests out of local domain
