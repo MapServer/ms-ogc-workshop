@@ -1,4 +1,4 @@
 sdesc: "MapServer OGC Web Services Workshop"
 ldesc: "MapServer OGC Web Services Workshop"
 category: Meta Web
-requires: mapserver apache php
+requires: mapserver apache php php_mapscript
