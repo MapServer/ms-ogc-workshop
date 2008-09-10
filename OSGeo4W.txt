@@ -1,5 +1,6 @@
-$Id: OSGeo4W.txt,v 1.5 2008-09-10 19:38:14 yassefa Exp $
+$Id: OSGeo4W.txt,v 1.6 2008-09-10 21:06:04 yassefa Exp $
 
+THIS IS DEPRICATED: PLEASE SEE PACKAGING.txt for up to date information.
 
 PACKAGING FOR OSGEO4W
 ---------------------
