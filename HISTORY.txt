@@ -1,5 +1,5 @@
 
-$Id: HISTORY.txt,v 1.24 2008-09-10 11:51:18 tkralidi Exp $
+$Id: HISTORY.txt,v 1.25 2008-09-10 13:52:20 tkralidi Exp $
 
 MapServer OGC Web Services Workshop Revision History
 ====================================================
@@ -8,7 +8,7 @@ This is a human-readable revision history which will attempt to document require
 
 For a complete change history, please see the CVS log comments.
 
-Current Version (CVS trunk):
+Version 1.0.10 (2008-09-10):
 -------------------------
 
 - Add BBOX element to the GetCoverage  call in the main index.html
