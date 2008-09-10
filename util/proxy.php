@@ -1,7 +1,12 @@
 <?php
+
+// Taken from Community Mapbuilder svn trunk
+// http://svn.codehaus.org/mapbuilder/trunk/mapbuilder/server/php/proxy.php
+// on 10 September 2008
+
 /*
 License: LGPL as per: http://www.gnu.org/copyleft/lesser.html
-$Id: proxy.php,v 1.1 2008-09-10 11:41:10 tkralidi Exp $
+$Id: proxy.php,v 1.2 2008-09-10 14:21:44 tkralidi Exp $
 $Name:  $
 */
 
