@@ -1,4 +1,4 @@
-$Id: OSGeo4W.txt,v 1.3 2008-03-17 14:04:41 yassefa Exp $
+$Id: OSGeo4W.txt,v 1.4 2008-09-10 12:18:18 yassefa Exp $
 
 
 PACAKAGING FOR OSGEO4W
@@ -56,4 +56,4 @@ PACAKAGING FOR OSGEO4W
 
  Misc
 
-  $ tar -cvjf ms_ogc_workshop-1.0.9.tar.bz2 --exclude-tag-all=Repository apps/ms_ogc_workshop etc/ini/ms_ogc_workshop.bat  etc/postinstall/ms_ogc_workshop.bat apache/htdocs/ms_ogc_workshop.pkg.html httpd.d/httpd_ms_ogc_workshop.conf
+  $ tar -cvjf ms_ogc_workshop-1.0.9.tar.bz2 --exclude-tag-all=Repository apps/ms_ogc_workshop etc/postinstall/ms_ogc_workshop.bat apache/htdocs/ms_ogc_workshop.pkg.html httpd.d/httpd_ms_ogc_workshop.conf
