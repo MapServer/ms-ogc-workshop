@@ -16,5 +16,6 @@ textreplace -sf apps/ms_ogc_workshop/client\wfs-filter\demo_init.html -df apps/m
 textreplace -sf apps/ms_ogc_workshop/client\wfs-filter\demo_init_answer.html  -df apps/ms_ogc_workshop/client\wfs-filter\demo_init_answer.html -map @osgeo4w@ "%OSGEO4W_ROOT%"
 textreplace -sf apps/ms_ogc_workshop/client\wms\demo_init.html  -df apps/ms_ogc_workshop/client\wms\demo_init.html -map @osgeo4w@ "%OSGEO4W_ROOT%"
 textreplace -sf apps/ms_ogc_workshop/client\wms\satellite\demo_init.html  -df apps/ms_ogc_workshop/client\wms\satellite\demo_init.html -map @osgeo4w@ "%OSGEO4W_ROOT%"
+textreplace -sf apps/ms_ogc_workshop/client\wms\satellite\demo_init_answer.html  -df apps/ms_ogc_workshop/client\wms\satellite\demo_init_answer.html -map @osgeo4w@ "%OSGEO4W_ROOT%"
 textreplace -sf apps/ms_ogc_workshop/filter\index.html  -df  apps/ms_ogc_workshop/filter\index.html  -map @osgeo4w@ "%OSGEO4W_ROOT%"
 textreplace -sf apps/ms_ogc_workshop/service\index.html  -df  apps/ms_ogc_workshop/service\index.html -map @osgeo4w@ "%OSGEO4W_ROOT%"

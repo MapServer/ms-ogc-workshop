@@ -18,5 +18,6 @@ textreplace -sf client\wfs-filter\demo_init.html -df client\wfs-filter\demo_init
 textreplace -sf client\wfs-filter\demo_init_answer.html  -df client\wfs-filter\demo_init_answer.html -map @osgeo4w@ /ms4w
 textreplace -sf client\wms\demo_init.html  -df client\wms\demo_init.html -map @osgeo4w@ /ms4w
 textreplace -sf client\wms\satellite\demo_init.html  -df client\wms\satellite\demo_init.html -map @osgeo4w@ /ms4w
+textreplace -sf client\wms\satellite\demo_init_answer.html  -df client\wms\satellite\demo_init_answer.html -map @osgeo4w@ /ms4w
 textreplace -sf filter\index.html  -df  filter\index.html  -map @osgeo4w@ /ms4w
 textreplace -sf service\index.html  -df  service\index.html -map @osgeo4w@ /ms4w
