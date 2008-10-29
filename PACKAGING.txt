@@ -39,15 +39,20 @@ PACKAGING FOR OSGEO4W
 
   The convention is to name the package using the package name and the version 
   (example :ms_ogc_workshop-1.0.9-1.tar.bz2)
+  
+ 3- excluding CVS folders
+ 
+  Use the tar '--exclude CVS' option to make sure the CVS folders are not included in the 
+  package.
 
- 3- setup.hint
+ 4- setup.hint
  
  For each osgeo4w package, there is a setup.hint attached to it. This files has information such
  as the full name of the package and the required packages.
  setup.hint is is included in cvs
 
 
- 4- Where to upload the package
+ 5- Where to upload the package
 
  The main site is http://download.osgeo.org/osgeo4w/release/ms_ogc_workshop/ 
 
@@ -96,4 +101,9 @@ PACKAGING FOR MS4W
 
       - get the   ms_ogc_workshop from CVS
       - get the textrepalce.exe binary from http://download.osgeo.org/osgeo4w/release/msvcrt/
-      - run the ms_ogc_workshop_ms4w.bat           
+      - run the ms_ogc_workshop_ms4w.bat   
+
+3 - excluding CVS folders
+ 
+    Use the tar '--exclude CVS' option to make sure the CVS folders are not included in the 
+    package.
