@@ -35,24 +35,29 @@ PACKAGING FOR OSGEO4W
   c:\OSGeo4W\apps\ms_ogc_workshop ...
 
 
- 2- Naming of the package
+ 2- Create 'ms_ogc_workshop.pdf'
+ 
+  Use OpenOffice to convert 'ms_ogc_workshop.ppt' to a PDF and also include it in the 
+  /doc folder of the package.
+
+ 3- Naming of the package
 
   The convention is to name the package using the package name and the version 
   (example :ms_ogc_workshop-1.0.9-1.tar.bz2)
   
- 3- excluding CVS folders
+ 4- excluding CVS folders
  
   Use the tar '--exclude CVS' option to make sure the CVS folders are not included in the 
   package.
 
- 4- setup.hint
+ 5- setup.hint
  
  For each osgeo4w package, there is a setup.hint attached to it. This files has information such
  as the full name of the package and the required packages.
  setup.hint is is included in cvs
 
 
- 5- Where to upload the package
+ 6- Where to upload the package
 
  The main site is http://download.osgeo.org/osgeo4w/release/ms_ogc_workshop/ 
 
@@ -103,7 +108,12 @@ PACKAGING FOR MS4W
       - get the textrepalce.exe binary from http://download.osgeo.org/osgeo4w/release/msvcrt/
       - run the ms_ogc_workshop_ms4w.bat   
 
-3 - excluding CVS folders
+3 - Create 'ms_ogc_workshop.pdf'
+ 
+    Use OpenOffice to convert 'ms_ogc_workshop.ppt' to a PDF and also include it in the 
+    /doc folder of the package.
+
+4 - excluding CVS folders
  
     Use the tar '--exclude CVS' option to make sure the CVS folders are not included in the 
     package.
