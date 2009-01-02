@@ -12,9 +12,9 @@
       <Keyword>workshop</Keyword>
     </KeywordList>
     <Abstract>Sample WMS for MapServer OGC Web Services Workshop.  Enjoy!</Abstract>
-    <LogoURL width="300" height="40" format="image/gif">      <OnlineResource xlink:type="simple" xlink:href="http://mapserver.gis.umn.edu/graphics/mapserver.gif"/>
+    <LogoURL width="439" height="68" format="image/jpeg">      <OnlineResource xlink:type="simple" xlink:href="http://mapserver.osgeo.org/_static/mapserver.jpg"/>
 </LogoURL>
-    <DescriptionURL format="text/html">      <OnlineResource xlink:type="simple" xlink:href="http://mapserver.gis.umn.edu/"/>
+    <DescriptionURL format="text/html">      <OnlineResource xlink:type="simple" xlink:href="http://mapserver.osgeo.org/"/>
 </DescriptionURL>
     <ContactInformation>
       <ContactPersonPrimary>

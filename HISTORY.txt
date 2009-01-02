@@ -1,5 +1,5 @@
 
-$Id: HISTORY.txt,v 1.26 2008-09-10 13:57:01 tkralidi Exp $
+$Id: HISTORY.txt,v 1.27 2009-01-02 17:40:31 tkralidi Exp $
 
 MapServer OGC Web Services Workshop Revision History
 ====================================================
@@ -10,7 +10,7 @@ For a complete change history, please see the CVS log comments.
 
 Current Version (trunk):
 ----------------------------
-
+- update links to MapServer website according to new structure
 
 Version 1.0.10 (2008-09-10):
 ----------------------------

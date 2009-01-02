@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<!-- $Id: mums.gml,v 1.6 2007-08-16 21:42:57 tkralidi Exp $ -->
+<!-- $Id: mums.gml,v 1.7 2009-01-02 17:40:31 tkralidi Exp $ -->
 <MapServerUserMeetings xmlns="http://localhost/ms_ogc_workshop" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://localhost/ms_ogc_workshop ./mums.xsd">
 	<gml:description>This is a GML document which provides locations of all MapServer User Meeting that have taken place</gml:description>
 	<gml:name>MapServer User Meetings</gml:name>
@@ -22,7 +22,7 @@
 			</gml:location>
 			<year>2003</year>
 			<venue>University of Minnesota, St. Paul Campus</venue>
-			<website>http://mapserver.gis.umn.edu/mum/index2003.html</website>
+			<website>http://mapserver.osgeo.org</website>
 		</Meeting>
 	</gml:featureMember>
 	<gml:featureMember>
@@ -56,7 +56,7 @@
 			</gml:location>
 			<year>2005</year>
 			<venue>Radisson Hotel Metrodome, located on the Minneapolis campus of the University of Minnesota</venue>
-			<website>http://mapserver.gis.umn.edu/mum/mtg2005.html</website>
+			<website>http://mapserver.osgeo.org</website>
 		</Meeting>
 	</gml:featureMember>
 	<gml:featureMember>

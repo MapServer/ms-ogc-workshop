@@ -1,5 +1,5 @@
 #
-# $Id: exercise.map,v 1.3 2008-03-12 21:37:35 yassefa Exp $
+# $Id: exercise.map,v 1.4 2009-01-02 17:40:32 tkralidi Exp $
 #
 # Start of map file
 #
@@ -178,16 +178,16 @@ MAP
    "wms_attribution_title" "Data from Environment Canada"
 
    # sets /WMT_MS_Capabilities/Capability/Layer/Attribution/LogoURL/@width
-   "wms_attribution_logourl_width" "655"
+   "wms_attribution_logourl_width" "439"
    
    # sets /WMT_MS_Capabilities/Capability/Layer/Attribution/LogoURL/@height
-   "wms_attribution_logourl_height" "130"
+   "wms_attribution_logourl_height" "68"
 
    # sets /WMT_MS_Capabilities/Capability/Layer/Attribution/LogoURL/Format   
-   "wms_attribution_logourl_format" "image/png"
+   "wms_attribution_logourl_format" "image/jpeg"
    
    # sets /WMT_MS_Capabilities/Capability/Layer/Attribution/LogoURL/OnlineResource/@xlink:href
-   "wms_attribution_logourl_href" "http://mapserver.gis.umn.edu/mum/header_fsa.png"
+   "wms_attribution_logourl_href" "http://mapserver.osgeo.org/_static/mapserver.jpg"
 
    # we support GetFeatureInfo text/html queries
    # you NEED query headers, footers, and body templates

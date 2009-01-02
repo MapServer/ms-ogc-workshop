@@ -116,9 +116,9 @@
     <Attribution>
         <Title>Data from Environment Canada</Title>
         <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.ec.gc.ca/"/>
-        <LogoURL width="221" height="20">
-             <Format>image/gif</Format>
-             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://mapserver.gis.umn.edu/mum/header_fsa.png"/>
+        <LogoURL width="439" height="68">
+             <Format>image/jpeg</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://mapserver.osgeo.org/_static/mapserver.jpg"/>
           </LogoURL>
     </Attribution>
     <Layer>

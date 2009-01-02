@@ -1,5 +1,5 @@
 #
-# $Id: demo.map,v 1.4 2008-03-12 21:37:35 yassefa Exp $
+# $Id: demo.map,v 1.5 2009-01-02 17:40:31 tkralidi Exp $
 #
 # Start of map file
 #
@@ -143,23 +143,23 @@ MAP
 
    # sets:
    # /ViewContext/General/DescriptionURL/OnlineResource/@xlink:href
-   "wms_descriptionurl_href" "http://mapserver.gis.umn.edu/"
+   "wms_descriptionurl_href" "http://mapserver.osgeo.org/"
 
    # sets:
    # /ViewContext/General/LogoURL/@width
-   "wms_logourl_width" "300"
+   "wms_logourl_width" "439"
 
    # sets:
    # /ViewContext/General/LogoURL/@height
-   "wms_logourl_height" "40"
+   "wms_logourl_height" "68"
 
    # sets:
    # /ViewContext/General/LogoURL/@format
-   "wms_logourl_format" "image/gif"
+   "wms_logourl_format" "image/jpeg"
 
    # sets:
    # /ViewContext/General/LogoURL/OnlineResource/@xlink:href
-   "wms_logourl_href" "http://mapserver.gis.umn.edu/graphics/mapserver.gif"
+   "wms_logourl_href" "http://mapserver.osgeo.org/_static/mapserver.jpg"
   END
  END
 
