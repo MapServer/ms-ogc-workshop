@@ -1,5 +1,5 @@
 
-$Id: README.txt,v 1.3 2008-09-10 19:38:14 yassefa Exp $
+$Id: README.txt,v 1.4 2009-01-02 17:04:16 aboudreault Exp $
 
 MapServer and OGC Web Services Workshop
 =======================================
@@ -139,3 +139,4 @@ OUTLINE
 - open discussion / forum
 
 If you have any questions or comments, feel free to contact me.
+
