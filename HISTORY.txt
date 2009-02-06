@@ -1,5 +1,5 @@
 
-$Id: HISTORY.txt,v 1.27 2009-01-02 17:40:31 tkralidi Exp $
+$Id: HISTORY.txt,v 1.28 2009-02-06 12:29:33 tkralidi Exp $
 
 MapServer OGC Web Services Workshop Revision History
 ====================================================
@@ -8,9 +8,10 @@ This is a human-readable revision history which will attempt to document require
 
 For a complete change history, please see the CVS log comments.
 
-Current Version (trunk):
+Current Version (HEAD):
 ----------------------------
 - update links to MapServer website according to new structure
+- add .qix for data/obs.shp data/rivers.shp
 
 Version 1.0.10 (2008-09-10):
 ----------------------------
