@@ -1,5 +1,5 @@
 #
-# $Id: config.map,v 1.6 2009-01-02 17:40:32 tkralidi Exp $
+# $Id: config.map,v 1.7 2009-03-26 12:04:14 tkralidi Exp $
 #
 # Start of map file
 #
@@ -27,6 +27,8 @@
 #
 
 MAP
+
+CONFIG PROJ_LIB "C:\ms4w\proj\nad"
 
  # all temp files get prefixed with this string
  NAME ms_ogc_workshop

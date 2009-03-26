@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<!-- $Id: mums.gml,v 1.7 2009-01-02 17:40:31 tkralidi Exp $ -->
+<!-- $Id: mums.gml,v 1.8 2009-03-26 12:04:14 tkralidi Exp $ -->
 <MapServerUserMeetings xmlns="http://localhost/ms_ogc_workshop" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://localhost/ms_ogc_workshop ./mums.xsd">
 	<gml:description>This is a GML document which provides locations of all MapServer User Meeting that have taken place</gml:description>
 	<gml:name>MapServer User Meetings</gml:name>
@@ -22,7 +22,7 @@
 			</gml:location>
 			<year>2003</year>
 			<venue>University of Minnesota, St. Paul Campus</venue>
-			<website>http://mapserver.osgeo.org</website>
+			<website>http://www.mapserver.org</website>
 		</Meeting>
 	</gml:featureMember>
 	<gml:featureMember>
@@ -56,7 +56,7 @@
 			</gml:location>
 			<year>2005</year>
 			<venue>Radisson Hotel Metrodome, located on the Minneapolis campus of the University of Minnesota</venue>
-			<website>http://mapserver.osgeo.org</website>
+			<website>http://www.mapserver.org</website>
 		</Meeting>
 	</gml:featureMember>
 	<gml:featureMember>
@@ -88,7 +88,7 @@
 					</gml:coord>
 				</gml:Point>
 			</gml:location>
-			<year>2006</year>
+			<year>2007</year>
 			<venue>Victoria Conference Centre</venue>
 			<website>http://www.foss4g2007.org/</website>
 		</Meeting>
@@ -105,10 +105,27 @@
 					</gml:coord>
 				</gml:Point>
 			</gml:location>
-			<year>2006</year>
+			<year>2008</year>
 			<venue>Cape Town, South Africa</venue>
 			<website>http://www.foss4g2008.org/</website>
 		</Meeting>
 	</gml:featureMember>
+	<gml:featureMember>
+		<Meeting>
+			<gml:description>This was where the seventh meeting was held</gml:description>
+			<gml:name>Sydney</gml:name>
+			<gml:location>
+				<gml:Point srsName="http://www.opengis.net/gml/srs/epsg.xml#4326">
+					<gml:coord>
+						<gml:X>151.128595</gml:X>
+						<gml:Y>-33.871702</gml:Y>
+					</gml:coord>
+				</gml:Point>
+			</gml:location>
+			<year>2009</year>
+			<venue>Sydney Convention & Exhibition Centre (SCEC)</venue>
+			<website>http://www.foss4g2009.org/</website>
+		</Meeting>
+	</gml:featureMember>    
 	<dateCreated>2007-08-13T17:17:32Z</dateCreated>
 </MapServerUserMeetings>
