@@ -1,5 +1,5 @@
 
-$Id: README.txt,v 1.4 2009-01-02 17:04:16 aboudreault Exp $
+$Id: README.txt,v 1.5 2010-02-03 17:45:53 tkralidi Exp $
 
 MapServer and OGC Web Services Workshop
 =======================================
@@ -9,7 +9,7 @@ Contact
 Tom Kralidis
 Senior Systems Scientist
 Environment Canada
-+01-905-336-4409
++01-416-739-4907
 tom.kralidis@ec.gc.ca
 
 INSTALLATION -- UNIX

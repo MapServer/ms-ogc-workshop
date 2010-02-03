@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<!-- $Id: mums.gml,v 1.8 2009-03-26 12:04:14 tkralidi Exp $ -->
+<!-- $Id: mums.gml,v 1.9 2010-02-03 17:45:53 tkralidi Exp $ -->
 <MapServerUserMeetings xmlns="http://localhost/ms_ogc_workshop" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://localhost/ms_ogc_workshop ./mums.xsd">
 	<gml:description>This is a GML document which provides locations of all MapServer User Meeting that have taken place</gml:description>
 	<gml:name>MapServer User Meetings</gml:name>
@@ -112,20 +112,20 @@
 	</gml:featureMember>
 	<gml:featureMember>
 		<Meeting>
-			<gml:description>This was where the seventh meeting was held</gml:description>
-			<gml:name>Sydney</gml:name>
+			<gml:description>This was where the 8th meeting was held</gml:description>
+			<gml:name>Barcelona</gml:name>
 			<gml:location>
 				<gml:Point srsName="http://www.opengis.net/gml/srs/epsg.xml#4326">
 					<gml:coord>
-						<gml:X>151.128595</gml:X>
-						<gml:Y>-33.871702</gml:Y>
+						<gml:X>2.1833333</gml:X>
+						<gml:Y>41.3833333</gml:Y>
 					</gml:coord>
 				</gml:Point>
 			</gml:location>
 			<year>2009</year>
-			<venue>Sydney Convention & Exhibition Centre (SCEC)</venue>
-			<website>http://www.foss4g2009.org/</website>
+			<venue>Palacio de Congresos de Barcelona</venue>
+			<website>http://2010.foss4g.org/</website>
 		</Meeting>
-	</gml:featureMember>    
+	</gml:featureMember>
 	<dateCreated>2007-08-13T17:17:32Z</dateCreated>
 </MapServerUserMeetings>

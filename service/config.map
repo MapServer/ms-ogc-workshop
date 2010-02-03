@@ -1,5 +1,5 @@
 #
-# $Id: config.map,v 1.7 2009-03-26 12:04:14 tkralidi Exp $
+# $Id: config.map,v 1.8 2010-02-03 17:45:53 tkralidi Exp $
 #
 # Start of map file
 #
@@ -392,11 +392,23 @@ CONFIG PROJ_LIB "C:\ms4w\proj\nad"
    # sets /WMT_MS_Capabilities/Capability/Layer/*/DataURL/OnlineResource/@xlink:href
    "wms_dataurl_href" "http://earthobservatory.nasa.gov/Newsroom/BlueMarble/Images/land_shallow_topo_2048.tif"
 
+   # sets /WMT_MS_Capabilities/Capability/Layer/*/AuthorityURL@name
+   "wms_authorityurl_name" "nasa"
+
+   # sets /WMT_MS_Capabilities/Capability/Layer/*/AuthorityURL/OnlineResource/@xlink:href
+   "wms_authorityurl_href" "http://visibleearth.nasa.gov/view_set.php?categoryID=2355"
+
+   # sets /WMT_MS_Capabilities/Capability/Layer/*/Identifier/@authority
+   "wms_identifier_authority" "nasa"
+
+   # sets /WMT_MS_Capabilities/Capability/Layer/*/Identifier
+   "wms_identifier_value" "bmng"
+
+   #To expose the RGB values
+   "gml_include_items" "all"
+
    # OGC:WFS specific tags
    # None!  This is raster data, not covered by OGC:WFS
-
-"gml_include_items" "all"
-
   END
  END
 
