@@ -66,7 +66,7 @@ PACKAGING FOR OSGEO4W
 
  7- package command
 
-  $ tar -cvjf ms_ogc_workshop-1.0.10.5.tar.bz2 --exclude CVS apps/ms_ogc_workshop etc/postinstall/ms_ogc_workshop.bat apache/htdocs/ms_ogc_workshop.pkg.html httpd.d/httpd_ms_ogc_workshop.conf
+  $ tar -cvjf ms_ogc_workshop-1.0.10.5-1.tar.bz2 --exclude CVS apps/ms_ogc_workshop etc/postinstall/ms_ogc_workshop.bat apache/htdocs/ms_ogc_workshop.pkg.html httpd.d/httpd_ms_ogc_workshop.conf
 
 
 
