@@ -1,5 +1,5 @@
 #
-# $Id: demo.map,v 1.5 2008-03-12 21:37:35 yassefa Exp $
+# $Id: demo.map,v 1.6 2013-02-27 18:20:37 jmckenna Exp $
 #
 # Start of map file
 #
@@ -37,7 +37,7 @@ MAP
 
  # add def pointers for symbols
 
- SYMBOLSET "../../etc/symbols/symbols.sym"
+ SYMBOLSET "../../etc/symbols/symbols.txt"
  FONTSET   "../../etc/fonts/fonts.txt"
 
  #
