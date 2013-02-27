@@ -1,5 +1,5 @@
 #
-# $Id: symbols.txt,v 1.1 2013-02-27 17:53:17 jmckenna Exp $
+# $Id: symbols.txt,v 1.2 2013-02-27 18:01:04 jmckenna Exp $
 #
 SYMBOLSET
  #1
@@ -185,9 +185,9 @@ SYMBOLSET
    1 1 
   END 
   #FILLED TRUE 
-  STYLE 
-   10 10
-  END 
+  #STYLE 
+   #10 10
+  #END 
  END
  #17
  SYMBOL
