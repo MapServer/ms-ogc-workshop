@@ -7,7 +7,7 @@
 MAP
 
  # all temp files get prefixed with this string
- NAME ms_ogc_workshop
+ NAME ms-ogc-workshop
 
  # always returns a map
  STATUS ON
@@ -124,14 +124,14 @@ MAP
 
    # if this value is set to 1, you can convert a mapfile to
    # an OGC:WMC via URL, with:
-   # http://localhost/cgi-bin/mapserv.exe?map=/osgeo4w/apps/ms_ogc_workshop/context/demo.map&request=GetContext
+   # http://localhost/cgi-bin/mapserv.exe?map=/osgeo4w/apps/ms-ogc-workshop/context/demo.map&request=GetContext
    # Remember, an OGC:WMC (just like any other XML) does NOT
    # have to be a static document
    "wms_getcontext_enabled" "1"
 
    # sets:
    # /ViewContext/@id
-   "wms_context_fid" "ms_ogc_workshop"
+   "wms_context_fid" "ms-ogc-workshop"
 
    # sets:
    # /ViewContext/@version

@@ -7,7 +7,7 @@
 MAP
 
  # all temp files get prefixed with this string
- NAME ms_ogc_workshop
+ NAME ms-ogc-workshop
 
  # always returns a map
  STATUS ON
@@ -219,7 +219,7 @@ MAP
   
   # actual data pointer to GML document
   #CONNECTION "../../data/mums.gml"
-  CONNECTION "@osgeo4w@/apps/ms_ogc_workshop/data/mums.gml"
+  CONNECTION "@osgeo4w@/apps/ms-ogc-workshop/data/mums.gml"
 
   CLASSITEM "year"
   # how will this data look?

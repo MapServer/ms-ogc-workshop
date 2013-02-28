@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- $Id: mums.xsd,v 1.5 2006-08-23 18:18:51 tkralidi Exp $ -->
-<xs:schema xmlns:gml="http://www.opengis.net/gml" xmlns:mum="http://localhost/ms_ogc_workshop" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://localhost/ms_ogc_workshop" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0.0">
+<xs:schema xmlns:gml="http://www.opengis.net/gml" xmlns:mum="http://localhost/ms-ogc-workshop" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://localhost/ms-ogc-workshop" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0.0">
 	<!-- metadata type info for the schema -->
 	<xs:annotation>
 		<xs:appinfo>mums.xsd 2004/10/02</xs:appinfo>

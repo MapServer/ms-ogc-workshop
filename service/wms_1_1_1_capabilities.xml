@@ -17,7 +17,7 @@
           <Keyword>ogc</Keyword>
           <Keyword>workshop</Keyword>
         </KeywordList>
-  <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost/ms_ogc_workshop/index.html"/>
+  <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost/ms-ogc-workshop/index.html"/>
   <ContactInformation>
     <ContactPersonPrimary>
       <ContactPerson>Tom Kralidis</ContactPerson>
@@ -46,8 +46,8 @@
       <Format>application/vnd.ogc.wms_xml</Format>
       <DCPType>
         <HTTP>
-          <Get><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost/cgi-bin/mapserv.exe?map=/ms4w/apps/ms_ogc_workshop/service/config.map&amp;"/></Get>
-          <Post><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost/cgi-bin/mapserv.exe?map=/ms4w/apps/ms_ogc_workshop/service/config.map&amp;"/></Post>
+          <Get><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost/cgi-bin/mapserv.exe?map=/ms4w/apps/ms-ogc-workshop/service/config.map&amp;"/></Get>
+          <Post><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost/cgi-bin/mapserv.exe?map=/ms4w/apps/ms-ogc-workshop/service/config.map&amp;"/></Post>
         </HTTP>
       </DCPType>
     </GetCapabilities>
@@ -60,8 +60,8 @@
       <Format>image/wbmp</Format>
       <DCPType>
         <HTTP>
-          <Get><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost/cgi-bin/mapserv.exe?map=/ms4w/apps/ms_ogc_workshop/service/config.map&amp;"/></Get>
-          <Post><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost/cgi-bin/mapserv.exe?map=/ms4w/apps/ms_ogc_workshop/service/config.map&amp;"/></Post>
+          <Get><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost/cgi-bin/mapserv.exe?map=/ms4w/apps/ms-ogc-workshop/service/config.map&amp;"/></Get>
+          <Post><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost/cgi-bin/mapserv.exe?map=/ms4w/apps/ms-ogc-workshop/service/config.map&amp;"/></Post>
         </HTTP>
       </DCPType>
     </GetMap>
@@ -71,8 +71,8 @@
       <Format>application/vnd.ogc.gml</Format>
       <DCPType>
         <HTTP>
-          <Get><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost/cgi-bin/mapserv.exe?map=/ms4w/apps/ms_ogc_workshop/service/config.map&amp;"/></Get>
-          <Post><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost/cgi-bin/mapserv.exe?map=/ms4w/apps/ms_ogc_workshop/service/config.map&amp;"/></Post>
+          <Get><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost/cgi-bin/mapserv.exe?map=/ms4w/apps/ms-ogc-workshop/service/config.map&amp;"/></Get>
+          <Post><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost/cgi-bin/mapserv.exe?map=/ms4w/apps/ms-ogc-workshop/service/config.map&amp;"/></Post>
         </HTTP>
       </DCPType>
     </GetFeatureInfo>
@@ -80,8 +80,8 @@
       <Format>text/xml</Format>
       <DCPType>
         <HTTP>
-          <Get><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost/cgi-bin/mapserv.exe?map=/ms4w/apps/ms_ogc_workshop/service/config.map&amp;"/></Get>
-          <Post><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost/cgi-bin/mapserv.exe?map=/ms4w/apps/ms_ogc_workshop/service/config.map&amp;"/></Post>
+          <Get><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost/cgi-bin/mapserv.exe?map=/ms4w/apps/ms-ogc-workshop/service/config.map&amp;"/></Get>
+          <Post><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost/cgi-bin/mapserv.exe?map=/ms4w/apps/ms-ogc-workshop/service/config.map&amp;"/></Post>
         </HTTP>
       </DCPType>
     </DescribeLayer>
@@ -93,8 +93,8 @@
       <Format>image/wbmp</Format>
       <DCPType>
         <HTTP>
-          <Get><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost/cgi-bin/mapserv.exe?map=/ms4w/apps/ms_ogc_workshop/service/config.map&amp;"/></Get>
-          <Post><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost/cgi-bin/mapserv.exe?map=/ms4w/apps/ms_ogc_workshop/service/config.map&amp;"/></Post>
+          <Get><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost/cgi-bin/mapserv.exe?map=/ms4w/apps/ms-ogc-workshop/service/config.map&amp;"/></Get>
+          <Post><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://localhost/cgi-bin/mapserv.exe?map=/ms4w/apps/ms-ogc-workshop/service/config.map&amp;"/></Post>
         </HTTP>
       </DCPType>
     </GetLegendGraphic>
@@ -107,7 +107,7 @@
   <VendorSpecificCapabilities />
   <UserDefinedSymbolization SupportSLD="1" UserLayer="0" UserStyle="1" RemoteWFS="0"/>
   <Layer>
-    <Name>ms_ogc_workshop</Name>
+    <Name>ms-ogc-workshop</Name>
     <Title>Sample OWS for MapServer OGC Web Services Workshop</Title>
     <SRS>EPSG:4326</SRS>
     <LatLonBoundingBox minx="-180" miny="-90" maxx="180" maxy="90" />
@@ -168,18 +168,18 @@
                     minx="-164.625" miny="-36.9044" maxx="161.066" maxy="72.2342" />
         <MetadataURL type="FGDC">
           <Format>text/html</Format>
-          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://localhost/ms_ogc_workshop/index.html"/>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://localhost/ms-ogc-workshop/index.html"/>
         </MetadataURL>
         <DataURL>
           <Format>text/html</Format>
-          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://localhost/ms_ogc_workshop/data/"/>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://localhost/ms-ogc-workshop/data/"/>
         </DataURL>
         <Style>
           <Name>default</Name>
           <Title>default</Title>
           <LegendURL width="20" height="10">
              <Format>image/png</Format>
-             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://localhost/cgi-bin/mapserv.exe?map=/ms4w/apps/ms_ogc_workshop/service/config.map&amp;version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=rivers&amp;format=image/png"/>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://localhost/cgi-bin/mapserv.exe?map=/ms4w/apps/ms-ogc-workshop/service/config.map&amp;version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=rivers&amp;format=image/png"/>
           </LegendURL>
         </Style>
       </Layer>

@@ -7,7 +7,7 @@
 MAP
 
  # all temp files get prefixed with this string
- NAME ms_ogc_workshop
+ NAME ms-ogc-workshop
 
  # always returns a map
  STATUS ON

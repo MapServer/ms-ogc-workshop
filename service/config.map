@@ -15,15 +15,15 @@
 #
 # For OGC:WMS:
 #
-# http://localhost/cgi-bin/mapserv.exe?map=@osgeo4w@/apps/ms_ogc_workshop/service/config.map&version=1.1.1&service=WMS&request=GetCapabilities
+# http://localhost/cgi-bin/mapserv.exe?map=@osgeo4w@/apps/ms-ogc-workshop/service/config.map&version=1.1.1&service=WMS&request=GetCapabilities
 #
 # For OGC:WFS:
 #
-# http://localhost/cgi-bin/mapserv.exe?map=@osgeo4w@/apps/ms_ogc_workshop/service/config.map&version=1.0.0&service=WFS&request=GetCapabilities
+# http://localhost/cgi-bin/mapserv.exe?map=@osgeo4w@/apps/ms-ogc-workshop/service/config.map&version=1.0.0&service=WFS&request=GetCapabilities
 #
 # For OGC:WCS:
 #
-# http://localhost/cgi-bin/mapserv.exe?map=@osgeo4w@/apps/ms_ogc_workshop/service/config.map&version=1.0.0&service=WCS&request=GetCapabilities
+# http://localhost/cgi-bin/mapserv.exe?map=@osgeo4w@/apps/ms-ogc-workshop/service/config.map&version=1.0.0&service=WCS&request=GetCapabilities
 #
 
 MAP
@@ -31,7 +31,7 @@ MAP
 CONFIG PROJ_LIB "C:\ms4w\proj\nad"
 
  # all temp files get prefixed with this string
- NAME ms_ogc_workshop
+ NAME ms-ogc-workshop
 
  # background color of image if transparency
  # is not requested
@@ -90,7 +90,7 @@ CONFIG PROJ_LIB "C:\ms4w\proj\nad"
 
   METADATA
 
-   "map" "@osgeo4w@/apps/ms_ogc_workshop/service/config.map"
+   "map" "@osgeo4w@/apps/ms-ogc-workshop/service/config.map"
    
    # generic OWS specific info
    # sets base URL for OGC Schemas so the root element in the
@@ -121,7 +121,7 @@ CONFIG PROJ_LIB "C:\ms4w\proj\nad"
    # /WMT_MS_Capabilities/Service/OnlineResource
    # /WFS_Capabilities/Service/OnlineResource
    # /WCS_Capabilities/Service/responsibleParty/onlineResource/@xlink:href
-   "ows_service_onlineresource" "http://localhost/ms_ogc_workshop/index.html"
+   "ows_service_onlineresource" "http://localhost/ms-ogc-workshop/index.html"
    
    # sets:
    # /WMT_MS_Capabilities/Capability/Request/GetCapabilities/DCPType/HTTP/Get/OnlineResource/@xlink:href
@@ -147,7 +147,7 @@ CONFIG PROJ_LIB "C:\ms4w\proj\nad"
    # /WCS_Capabilities/Capability/Request/DescribeFeatureType/DCPType/HTTP/Post/OnlineResource/@xlink:href
    # /WCS_Capabilities/Capability/Request/GetFeature/DCPType/HTTP/Get/OnlineResource/@xlink:href
    # /WCS_Capabilities/Capability/Request/GetFeature/DCPType/HTTP/Post/OnlineResource/@xlink:href
-   "ows_onlineresource" "http://localhost/cgi-bin/mapserv.exe?map=@osgeo4w@/apps/ms_ogc_workshop/service/config.map"
+   "ows_onlineresource" "http://localhost/cgi-bin/mapserv.exe?map=@osgeo4w@/apps/ms-ogc-workshop/service/config.map"
 
    # sets:
    # /WMT_MS_Capabilities/Service/Fees
@@ -255,11 +255,11 @@ CONFIG PROJ_LIB "C:\ms4w\proj\nad"
    
    # sets namespace URI when performing a DescribeFeatureType or GetFeature
    # in the root element of the XML response
-   "wfs_namespace_uri" "http://localhost/ms_ogc_workshop"
+   "wfs_namespace_uri" "http://localhost/ms-ogc-workshop"
 
    # sets the XML namespace prefix to be used when defining types for data
    # in this mapfile
-   "wfs_namespace_prefix" "ms_ogc_workshop"
+   "wfs_namespace_prefix" "ms-ogc-workshop"
 
    # OGC:WCS
    
@@ -273,7 +273,7 @@ CONFIG PROJ_LIB "C:\ms4w\proj\nad"
 
    # sets:
    # /WCS_Capabilities/Service/metadataLink/@xlink:href
-   "wcs_metadatalink_href" "http://localhost/ms_ogc_workshop/index.html"
+   "wcs_metadatalink_href" "http://localhost/ms-ogc-workshop/index.html"
    
    #enable all OGC requests
    "ows_enable_request" "*"   
@@ -483,7 +483,7 @@ CONFIG PROJ_LIB "C:\ms4w\proj\nad"
 
    # sets:
    # /WMT_MS_Capabilities/Capability/Layer/*/DataURL/OnlineResource/@xlink:href
-   "wms_dataurl_href" "http://localhost/ms_ogc_workshop/data/"
+   "wms_dataurl_href" "http://localhost/ms-ogc-workshop/data/"
 
    # sets:
    # /WMT_MS_Capabilities/Capability/Layer/*/DataURL/Format
@@ -497,7 +497,7 @@ CONFIG PROJ_LIB "C:\ms4w\proj\nad"
    # sets:
    # /WMT_MS_Capabilities/Capability/Layer/*/MetadataURL/OnlineResource/@xlink:href
    # /WFS_Capabilities/FeatureTypeList/FeatureType[*]/MetadataURL
-   "ows_metadataurl_href" "http://localhost/ms_ogc_workshop/index.html"
+   "ows_metadataurl_href" "http://localhost/ms-ogc-workshop/index.html"
 
    # sets:
    # /WMT_MS_Capabilities/Capability/Layer/*/MetadataURL/Format
