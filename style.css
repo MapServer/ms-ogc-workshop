@@ -1,0 +1,36 @@
+body {
+	background-color: #ffffff;
+	font-family: arial, verdana, sans-serif;
+	text-align: left;
+	float: left;
+}
+.dual-column {
+	vertical-align: top;
+	margin-left: auto;
+	margin-right: auto;
+	width: 600px;
+	border: 0px;
+}
+.column-left {
+	text-align: left;
+	width: 50%;
+}
+.column-right {
+	text-align: right;
+	width: 50%;
+}
+.flat {
+	border: 0px;
+}
+.trim {
+	border: 10px;
+}
+.banner {
+	text-align: center;
+}
+.centered {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
