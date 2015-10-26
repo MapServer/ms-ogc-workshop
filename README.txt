@@ -10,7 +10,7 @@ Tom Kralidis
 Senior Systems Scientist
 Environment Canada
 +01-416-739-4907
-tom.kralidis@ec.gc.ca
+tom.kralidis@canada.ca
 
 INSTALLATION -- UNIX
 --------------------

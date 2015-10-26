@@ -218,7 +218,7 @@ MAP
    # sets:
    # /WMT_MS_Capabilities/Service/ContactInformation/ContactElectronicMailAddress
    # /WCS_Capabilities/Service/contactInfo/address/eletronicMailAddress
-   "ows_contactelectronicmailaddress" "tom.kralidis@ec.gc.ca"
+   "ows_contactelectronicmailaddress" "tom.kralidis@canada.ca"
 
    # sets:
    # /WMT_MS_Capabilities/Capability/Layer/SRS

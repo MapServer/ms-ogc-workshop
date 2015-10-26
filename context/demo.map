@@ -120,7 +120,7 @@ MAP
 
    # sets:
    # /ViewContext/General/ContactInformation/ContactElectronicMailAddress
-   "wms_contactelectronicmailaddress" "tom.kralidis@ec.gc.ca"
+   "wms_contactelectronicmailaddress" "tom.kralidis@canada.ca"
 
    # if this value is set to 1, you can convert a mapfile to
    # an OGC:WMC via URL, with:
