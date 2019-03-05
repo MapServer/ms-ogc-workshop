@@ -19,10 +19,10 @@ INSTALLATION -- UNIX
 
 1./
 
-- download this zipfile (latest is always at: http://www.maptools.org/ms4w/index.phtml?page=downloads.html)
+- download this zipfile (latest is always at: https://ms4w.com/download.html)
 - unzip package into the root of your file structure, i.e.:
 
-$ lwp-download http://dl.maptools.org/dl/ms-ogc-workshop/ms_ogc_workshop-10.10.zip /tmp/ms_ogc_workshop.zip
+$ lwp-download https://ms4w.com/release/apps/ms-ogc-workshop.zip /tmp/ms_ogc_workshop.zip
 $ unzip /tmp/ms_ogc_workshop.zip
 
 The above package will unzip into install into the /ms4w directory structure.
@@ -45,7 +45,7 @@ INSTALLATION -- WINDOWS MS4W
 
 You will require the MapServer for Windows (MS4W) package.  The downloads page is at:
 
-http://www.maptools.org/ms4w/index.phtml?page=downloads.html
+https://ms4w.com/download.html
 
 a./
 - download/install the latest ms4w package.
@@ -53,7 +53,7 @@ a./
 The above package will install MapServer software, as well as an instance of the Apache Web Server.  At this point, you can run C:\ms4w\Apache\bin\Apache.exe, which will start the web server, and point your web browser to http://127.0.0.1/, and you will see the ms4w homepage with some links.
 
 b./
-- download the MapServer OGC Web Services Workshop this zip file form http://www.maptools.org/ms4w/index.phtml?page=downloads.html
+- download the MapServer OGC Web Services Workshop this zip file form https://ms4w.com/download.html
 - Extract the packages below to the root of the drive where your MS4W is installed on (e.g. C:\ )
 - make sure "Use Folder Names" is checked
 
