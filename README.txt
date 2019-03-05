@@ -1,6 +1,3 @@
-
-$Id: README.txt,v 1.5 2010-02-03 17:45:53 tkralidi Exp $
-
 MapServer and OGC Web Services Workshop
 =======================================
 
