@@ -89,7 +89,7 @@ Your contribution will be under our [license](https://github.com/MapServer/ms-og
 
 ### Documentation
 
-* documentation is managed in `doc/`, using Microsoft Powerpoint
+* Documentation is managed in `doc/`, using Microsoft Powerpoint
 
 ## Suggesting Enhancements
 
