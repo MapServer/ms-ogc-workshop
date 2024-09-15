@@ -28,8 +28,6 @@
 
 MAP
 
-CONFIG PROJ_LIB "C:\ms4w\proj\nad"
-
  # all temp files get prefixed with this string
  NAME ms-ogc-workshop
 
@@ -326,9 +324,6 @@ CONFIG PROJ_LIB "C:\ms4w\proj\nad"
 
   # what type of data is this?
   TYPE RASTER
-
-  # allow data access via query and WCS
-  DUMP TRUE
   
   # always returned with interface
   STATUS ON
@@ -514,9 +509,6 @@ CONFIG PROJ_LIB "C:\ms4w\proj\nad"
 
   END
 
-  # data is queryable
-  DUMP TRUE
-
   # query templates for HTML-based queries
   # responds to OGC:WMS request=GetFeatureInfo......&info_format=text/html
   HEADER   ../templates/rivers_query_header.html
@@ -528,7 +520,9 @@ CONFIG PROJ_LIB "C:\ms4w\proj\nad"
   # how will this data look?
   CLASS
    NAME "Rivers"
-   COLOR 0 0 255
+   STYLE
+     COLOR 0 0 255
+   END
    # if you want to use a canned graphic for the
    # legend do it like this.
    # this is what will show up when a user does either
@@ -545,7 +539,6 @@ CONFIG PROJ_LIB "C:\ms4w\proj\nad"
   NAME "toronto"
   STATUS ON
   TYPE RASTER
-  DUMP TRUE
   DATA ../data/toronto.tif
   PROJECTION
    "init=epsg:26917"
