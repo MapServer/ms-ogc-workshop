@@ -144,9 +144,7 @@ MAP
 
   # actual data pointer
   DATA ../../data/land_shallow_topo_2048.tif
-  
-  DUMP TRUE
-  
+    
   HEADER   "../../templates/land_shallow_topo_2048_query_header.html"
   TEMPLATE "../../templates/land_shallow_topo_2048_query_body.html"
   
@@ -177,9 +175,6 @@ MAP
   # actual data pointer
   DATA ../../data/rivers
 
-  # data is queryable
-  DUMP TRUE
-
   # query templates for HTML-based queries
   HEADER   ../../templates/rivers_query_header.html
   TEMPLATE ../../templates/rivers_query_body.html
@@ -189,12 +184,14 @@ MAP
   # how will this data look?
   CLASS
    NAME "Rivers"
-   COLOR 0 0 255
+   STYLE
+     COLOR 0 0 255
+   END
   END
  END
 
  LAYER
-  NAME envirodat
+  NAME parks
   GROUP "VECTOR"
   TYPE POINT
   STATUS ON
@@ -205,10 +202,10 @@ MAP
   # MapServer will add the OGC:WMS specific
   # keyword value pairs accordingly
   #CONNECTION "http://map.ns.ec.gc.ca/envdat/map.aspx?service=WFS&version=1.0.0&request=GetFeature"
-  CONNECTION "http://map.ns.ec.gc.ca/envdat/map.aspx?"
+  CONNECTION "https://demo.gatewaygeomatics.com/cgi-bin/wfs_gateway?"
 
   PROJECTION
-   "init=epsg:4326"
+   "init=epsg:3978"
   END
 
   # base info MapServer needs to know to generate the
@@ -232,10 +229,10 @@ MAP
    "wfs_service" "WFS"
 
    # what is the feature type you are querying
-   "wfs_typename" "envirodat"
+   "wfs_typename" "park"
 
    # what is the spatial extent?
-   "wfs_latlonboundingbox" "-64.6622 46.7594 -52.6808 55.2333"
+   #"wfs_latlonboundingbox" "-64.6622 46.7594 -52.6808 55.2333"
    #
   END
   #

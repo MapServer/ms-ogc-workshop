@@ -145,9 +145,7 @@ MAP
 
   # actual data pointer
   DATA ../../data/land_shallow_topo_2048.tif
-  
-  DUMP TRUE
-  
+    
   HEADER   "../../templates/land_shallow_topo_2048_query_header.html"
   TEMPLATE "../../templates/land_shallow_topo_2048_query_body.html"
   
@@ -178,9 +176,6 @@ MAP
   # actual data pointer
   DATA ../../data/rivers
 
-  # data is queryable
-  DUMP TRUE
-
   # query templates for HTML-based queries
   HEADER   "../../templates/rivers_query_header.html"
   TEMPLATE "../../templates/rivers_query_body.html"
@@ -190,7 +185,9 @@ MAP
   # how will this data look?
   CLASS
    NAME "Rivers"
-   COLOR 0 0 255
+   STYLE
+     COLOR 0 0 255
+   END
   END
  END
 
@@ -226,42 +223,46 @@ MAP
   CLASS
    NAME "2003"
    EXPRESSION /2003/
-   SYMBOL 2
-   SIZE 10
-   COLOR 255 0 0
-   OUTLINECOLOR 0 0 0
+   STYLE
+     SYMBOL 2
+     SIZE 10
+     COLOR 255 0 0
+     OUTLINECOLOR 0 0 0
+   END
   END
   
   CLASS
    NAME "2004"
    EXPRESSION /2004/
-   SYMBOL 2
-   SIZE 10
-   COLOR 0 255 0
-   OUTLINECOLOR 0 0 0
+   STYLE   
+     SYMBOL 2
+     SIZE 10
+     COLOR 0 255 0
+     OUTLINECOLOR 0 0 0
+   END	 
   END 
 
   CLASS
    NAME "2005"
    EXPRESSION /2005/
-   SYMBOL 2
-   SIZE 10
-   COLOR 0 255 255
-   OUTLINECOLOR 0 0 0
+   STYLE   
+     SYMBOL 2
+     SIZE 10
+     COLOR 0 255 255
+     OUTLINECOLOR 0 0 0
+   END
   END 
 
   CLASS
    NAME "2006"
    EXPRESSION /2006/
-   SYMBOL 2
-   SIZE 10
-   COLOR 0 255 255
-   OUTLINECOLOR 0 0 0
-  END 
-
-  
-  # data is queryable
-  DUMP TRUE
+   STYLE
+     SYMBOL 2
+     SIZE 10
+     COLOR 0 255 255
+     OUTLINECOLOR 0 0 0
+   END
+  END
 
   # query templates for HTML-based queries
   HEADER   "../../templates/mums_query_header.html"
