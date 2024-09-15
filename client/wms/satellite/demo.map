@@ -150,9 +150,6 @@ MAP
   # actual data pointer
   DATA ../../../data/rivers
 
-  # data is queryable
-  DUMP TRUE
-
   # query templates for HTML-based queries
   HEADER   ../../../templates/rivers_query_header.html
   TEMPLATE ../../../templates/rivers_query_body.html
@@ -162,7 +159,9 @@ MAP
   # how will this data look?
   CLASS
    NAME "Rivers"
-   COLOR 0 0 255
+   STYLE
+     COLOR 0 0 255
+   END
   END
  END
  

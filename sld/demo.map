@@ -160,6 +160,9 @@ MAP
    # sets:
    # /ViewContext/General/LogoURL/OnlineResource/@xlink:href
    "wms_logourl_href" "http://www.omsug.ca/osgis2004/images/top_banner_2.jpg"
+   
+   #enable all OGC requests
+   "ows_enable_request" "*"    
   END
  END
 
@@ -247,7 +250,7 @@ MAP
   STATUS ON
 
   # actual data pointer
-  DATA ../../data/land_shallow_topo_2048.tif
+  DATA ../data/land_shallow_topo_2048.tif
  END
  LAYER
   # name of layer
@@ -269,10 +272,7 @@ MAP
   STATUS ON
 
   # actual data pointer
-  DATA ../../data/rivers
-
-  # data is queryable
-  DUMP TRUE
+  DATA ../data/rivers
 
   # query templates for HTML-based queries
   HEADER   ../../templates/rivers_query_header.html
@@ -292,61 +292,81 @@ MAP
   CLASS
    NAME "Amazon"
    EXPRESSION /Amazon/
-   COLOR 0 0 255
+   STYLE
+     COLOR 0 0 255
+   END
   END
 
   CLASS
    NAME "Congo"
    EXPRESSION /Congo/
-   COLOR 0 0 240
+   STYLE   
+     COLOR 0 0 240
+   END
   END
 
   CLASS
    NAME "Lena"
    EXPRESSION /Lena/
-   COLOR 0 0 225
+   STYLE
+     COLOR 0 0 225
+   END
   END
 
   CLASS
    NAME "Mackenzie"
    EXPRESSION /Mackenzie/
-   COLOR 0 0 210
+   STYLE
+     COLOR 0 0 210
+   END
   END
 
   CLASS
    NAME "Mississippi"
    EXPRESSION /Mississippi/
-   COLOR 0 0 195
+   STYLE
+     COLOR 0 0 195
+   END
   END
 
   CLASS
    NAME "Nile"
    EXPRESSION /Nile/
-   COLOR 0 0 180
+   STYLE
+     COLOR 0 0 180
+   END
   END
 
   CLASS
    NAME "Ob"
    EXPRESSION /Ob/
-   COLOR 0 0 165
+   STYLE
+     COLOR 0 0 165
+   END
   END
 
   CLASS
    NAME "Parana"
    EXPRESSION /Parana/
-   COLOR 0 0 150
+   STYLE
+     COLOR 0 0 150
+   END
   END
 
   CLASS
    NAME "Tigris/Euphrates"
    EXPRESSION /Tigris/
-   COLOR 0 0 135
+   STYLE
+     COLOR 0 0 135
+   END
   END
 
   CLASS
    NAME "Other"
    EXPRESSION /./
-   COLOR 0 0 120
+   STYLE
+     COLOR 0 0 120
+   END
   END
 
  END

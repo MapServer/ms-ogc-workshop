@@ -263,9 +263,6 @@ MAP
 
   # what type of data is this?
   TYPE RASTER
-
-  # allow data access via query and WCS
-  DUMP TRUE
   
   # always returned with interface
   STATUS ON
