@@ -237,15 +237,17 @@ MAP
   END
   #
   # MapServer will then use this information to generate a string like:
-  # http://map.ns.ec.gc.ca/envdat/map.aspx?version=<wfs_version>&service=<wfs_service>&request=GetFeature&typename=<wfs_typename>
+  # https://demo.gatewaygeomatics.com/cgi-bin/wfs_gateway?version=<wfs_version>&service=<wfs_service>&request=GetFeature&typename=<wfs_typename>
   #
   # missing required keyword value pairs get generated according
   # to the application using this mapfile, i.e.:
   # &bbox, &filter, etc.
 
   CLASS
-   NAME "Water Quality Monitoring Stations"
-   COLOR 255 255 0
+   NAME "Parks"
+   STYLE
+     COLOR 50 205 50
+   END
   END
  END
 END
